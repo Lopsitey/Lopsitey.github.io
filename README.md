@@ -1,4 +1,4 @@
-This project was created as part of university coursework by Jake Astles in 2025.
+This project was created as for my personal website and started in 2025.
 
 All original work is protected under the CGNU Affero General Public License v3.0.
 
