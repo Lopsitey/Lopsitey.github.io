@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jake Astles Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Jake Astles | Home</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
       <a class="navbar-brand" href="#">
 		  Jake Astles&nbsp;<br>
       </a>
@@ -19,6 +20,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
+			  <!-- sr-only lets me tell specifically the screen reader information. e.g. the current page -->
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -35,7 +37,7 @@
             </div>
           </li>
 			<li class="nav-item">
-            <a class="nav-link" href="#">University&nbsp;</a>
+            <a class="nav-link" href="pages/University.html">University&nbsp;</a>
           </li>
         </ul>
 	    <div class="w-25 d-flex justify-content-around">
@@ -45,6 +47,7 @@
 			<a href="https://github.com/Lopsitey" target="_blank"><img src="images/GitHub Logo.png" width="35" height="35" alt="GitHub"/></a>
 			<a href="https://davr547.itch.io/" target="_blank"><img src="images/Itch.io Logo.png" width="35" height="35" alt="Itch.io"/></a>
 			<a href="https://www.instagram.com/_jakeastles/" target="_blank"><img src="images/Instagram Logo.png" width="35" height="35" alt="Instagram"/></a>
+			<a href="https://trello.com/u/davr547/activity" target="_blank"><img src="images/Trello Logo.png" width="35" height="35" alt="Trello"/></a>
 		</div>
 		</div>
     </nav>
@@ -68,10 +71,10 @@
           <div class="col-4">
 		  </div>
 			<div class="col-6 text-center">
-            <h1 id="About">About Me</h1>
-		  </div>
+            	<h1 id="About">About Me</h1>
+		  	</div>
 		  <div class="col-4 pt-5 text-center pr-0">
-		    <img src="images/200x200.gif" width="200" height="200" alt=""/>
+		    <img src="images/profile.png" width="280" height="200" alt="My picture"/>
 		  </div>
 		  <div class="col-8 text-center p-0">
 			<p class="w-75">
@@ -84,49 +87,51 @@
       </div>
     </section>
     <section>
-      <div class="container mt-2">
-		  <div class="row">
-          <div class="col-12 text-center">
-            <h2>Latest Work</h2>
-            <p>Here are some of my most recent projects</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">Mushroom Mayhem</h5>
-                  This is a horror game where you have to explore a map to collect food whilst avoiding the hungry mushrooms. With only a torch and a stun gun to aid you, can you survive? 
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">Pizza Apocalypse</h5>
-                  This is a post-apocalyptic pizza delivery simulator. You are one of the few remaining and as a delivery driver it is your responsibility to feed the starving survivors. With only pizza at your disposal, can you fend off the zombies for long enough to complete your deliveries?
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 col-12">
-            <ul class="list-unstyled">
-              <li class="media">
-                <img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">Tank Escape</h5>
-                  This is a third-person shooter/puzzle game. You wake up in a tank on an alien planet and find yourself attacked. Your only method to escape is to fight past these strange creatures and figure out how to open the doors.
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+		<div class="jumbotron">
+			<div class="container mt-2">
+			  <div class="row">
+			  <div class="col-12 text-center">
+				<h2>Latest Work</h2>
+				<p>Here are some of my most recent projects</p>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-md-4 col-12">
+				<ul class="list-unstyled">
+				  <li class="media">
+					<img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
+					<div class="media-body">
+					  <h5 class="mt-0 mb-1">Mushroom Mayhem</h5>
+					  This is a horror game where you have to explore a map to collect food whilst avoiding the hungry mushrooms. With only a torch and a stun gun to aid you, can you survive? 
+					</div>
+				  </li>
+				</ul>
+			  </div>
+			  <div class="col-md-4 col-12">
+				<ul class="list-unstyled">
+				  <li class="media">
+					<img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
+					<div class="media-body">
+					  <h5 class="mt-0 mb-1">Pizza Apocalypse</h5>
+					  This is a post-apocalyptic pizza delivery simulator. You are one of the few remaining and as a delivery driver it is your responsibility to feed the starving survivors. With only pizza at your disposal, can you fend off the zombies for long enough to complete your deliveries?
+					</div>
+				  </li>
+				</ul>
+			  </div>
+			  <div class="col-md-4 col-12">
+				<ul class="list-unstyled">
+				  <li class="media">
+					<img class="mr-3" src="images/35X35.gif" alt="Generic placeholder image">
+					<div class="media-body">
+					  <h5 class="mt-0 mb-1">Tank Escape</h5>
+					  This is a third-person shooter/puzzle game. You wake up in a tank on an alien planet and find yourself attacked. Your only method to escape is to fight past these strange creatures and figure out how to open the doors.
+					</div>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
     </section>
     <hr>
     <section>
@@ -151,7 +156,7 @@
 				 
 			  </div>
 			  <div class="row">
-				  <p class="col-11" style="padding-right:95px;"><b>Tel: </b>+44 phonenum</p>
+				  <p class="col-11" style="padding-right:4.9REM;"><b>Tel: </b>+44 07741206165</p>
 			  </div>
             <button type="button" class="btn btn-success">Get in touch</button>
           </div>
