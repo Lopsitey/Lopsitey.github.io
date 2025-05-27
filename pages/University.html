@@ -95,12 +95,19 @@
           <div class="col-12 text-center">
             <h1 class="mb-3">Contact Me</h1>
 			  <div class="row">
-				  <p class="col-12"><b>Email: </b> <a href="mailto:placeholder@gmail.com">placeholder@gmail.com</a></p>
-				 
+				  <p class="col-12"><b>Email: </b> <a href="mailto:placeholder@gmail.com">contact@jake-astles.work</a></p>
 			  </div>
-			  <div class="row">
-				  <p class="col-12" style="padding-right:4.9REM;"><b>Tel: </b>+44 07741206165</p>
+			  <form id="contactForm" class="text-left">
+			  <div class="form-group">
+				<label for="Name">Email address</label>
+				<input type="text" class="form-control" id="Name">
 			  </div>
+			  <div class="form-group">
+				<label for="RequestInfo">Request Info</label>
+				<textarea class="form-control" id="RequestInfo" rows="3"></textarea>
+			  </div>
+			  <button type="submit" class="btn btn-primary">Submit</button>				  
+			</form>
           </div>
         </div>
       </div>
@@ -120,5 +127,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap-4.4.1.js"></script>
+	<script src="../js/contact-form.js"></script>
   </body>
 </html>
