@@ -1,5 +1,7 @@
+const navUrl = new URL('navbar.html', document.currentScript.src);
+
 document.addEventListener("DOMContentLoaded", () => {
-  fetch('../js/navbar.html')
+  fetch(navUrl)
     .then(response => {
       if (!response.ok) throw new Error('Navbar load error');
       return response.text();
