@@ -20,16 +20,22 @@ html {
   font-weight: 600;
 }
 
-.btn-paypal:hover,
-.btn-paypal:focus {
+.btn-paypal:hover {
   border-color: #0d6efd;
-  color: #001c64;
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.btn-paypal:focus {
+  background-color: #0d6efd;
+  border-color: #000000;
+  color: #ffffff;
 }
 
 .btn-paypal:active {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
-  color: #ffffff;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #0d6efd;
 }
 
 .donation-box p:last-of-type {
