@@ -1,3 +1,37 @@
 html {
   scroll-padding-top: 50px;/*So the navbar doesn't cover the page when jumping to a new section*/
 }
+
+.donation-box {
+  background-color: rgba(248, 249, 250, 0.95);
+  border: 2px solid #b6d8ff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.donation-box-wrapper {
+  margin-top: 3rem;
+}
+
+.btn-paypal {
+  background-color: #ffc439;
+  border-color: #ffc439;
+  color: #003087;
+  font-weight: 600;
+}
+
+.btn-paypal:hover,
+.btn-paypal:focus {
+  border-color: #0d6efd;
+  color: #001c64;
+}
+
+.btn-paypal:active {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #ffffff;
+}
+
+.donation-box p:last-of-type {
+  margin-bottom: 1.5rem;
+}
