@@ -2,6 +2,10 @@ html {
   scroll-padding-top: 50px;/*So the navbar doesn't cover the page when jumping to a new section*/
 }
 
+.navbar-nav .nav-link {
+  color: #ffffff;
+}
+
 .donation-box {
   background-color: rgba(248, 249, 250, 0.95);
   border: 2px solid #b6d8ff;
