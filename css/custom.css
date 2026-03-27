@@ -6,6 +6,11 @@ html {
   color: #ffffff !important;
 }
 
+.navbar-nav .nav-link.active {
+  -webkit-text-stroke: 1px #ffffff;
+  text-stroke: 1px #ffffff;
+}
+
 .donation-box {
   background-color: rgba(248, 249, 250, 0.95);
   border: 2px solid #b6d8ff;
