@@ -7,8 +7,8 @@ html {
 }
 
 .navbar-nav .nav-link.active {
-  -webkit-text-stroke: 1px #0d6efd;
-  text-stroke: 1px #0d6efd;
+  -webkit-text-stroke: 1px #9fcdff;
+  text-stroke: 1px #9fcdff;
 }
 
 .donation-box {
