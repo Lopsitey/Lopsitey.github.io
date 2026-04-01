@@ -50,3 +50,26 @@ html {
 .donation-box p:last-of-type {
   margin-bottom: 1.5rem;
 }
+
+.latest-work-item {
+  margin-bottom: 1.5rem;
+}
+
+.latest-work-image {
+  display: block;
+  width: clamp(10vw, 12vw, 15vw);
+  min-width: 120px;
+  max-width: 220px;
+  height: auto;
+  margin: 0 auto 0.75rem;
+}
+
+.latest-work-content {
+  text-align: left;
+}
+
+@media (max-width: 767.98px) {
+  .latest-work-content {
+    text-align: center;
+  }
+}
