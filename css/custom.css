@@ -68,6 +68,52 @@ html {
   text-align: left;
 }
 
+.portfolio-feature-card {
+  border: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  min-height: 100%;
+}
+
+.portfolio-feature-card .card-img-top {
+  height: 18rem;
+  object-fit: cover;
+}
+
+.portfolio-feature-card .card-body {
+  padding: 1.5rem;
+}
+
+.portfolio-feature-card .card-title {
+  margin-bottom: 0.75rem;
+}
+
+.portfolio-feature-card .card-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.portfolio-feature-card--ggj {
+  background: linear-gradient(180deg, #143d3d 0%, #0f1f28 100%);
+  color: #f7fffd;
+}
+
+.portfolio-feature-card--ggj .card-title a,
+.portfolio-feature-card--ggj .card-text a {
+  color: #8fe9d8;
+}
+
+.portfolio-feature-card--ballatro {
+  background: linear-gradient(180deg, #3b145a 0%, #1c102f 100%);
+  color: #fdf7ff;
+}
+
+.portfolio-feature-card--ballatro .card-title a,
+.portfolio-feature-card--ballatro .card-text a {
+  color: #e6b3ff;
+}
+
 @media (max-width: 767.98px) {
   .latest-work-content {
     text-align: center;
