@@ -1,0 +1,16 @@
+A polynomial algorithm is a good algorithm that can be solved efficiently
+A intractable algorithm is not polynomial and is inefficient
+
+Polynomial time is the term used to refer to the time it takes for a computer to solve a problem
+Polynomial usually just means when something has several terms e.g. sum (int x, int y, int z) is polynomial
+
+An algorithm is tractable if it can be solved in a reasonable time by a computer algorithm
+
+To summarize:
+
+    Polynomial algorithms are efficient and have a polynomial time complexity.
+    Intractable algorithms are inefficient and have exponential or factorial time complexity.
+    Polynomial time refers to the growth rate of an algorithm's runtime.
+    Tractable algorithms are solvable within a reasonable time frame.
+
+It's important to note that the boundary between tractable and intractable problems is not always clear-cut. Some problems with high polynomial exponents (e.g., O(n^100)) may be considered practically intractable, even though they are technically polynomial.
