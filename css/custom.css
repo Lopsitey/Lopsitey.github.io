@@ -51,6 +51,15 @@ html {
   margin-bottom: 1.5rem;
 }
 
+.university-page {
+  overflow-x: hidden;
+}
+
+.university-page section > .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .latest-work-item {
   margin-bottom: 1.5rem;
 }
@@ -87,6 +96,9 @@ html {
 
 .portfolio-feature-card .card-title {
   margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .portfolio-feature-card .card-text {
@@ -112,6 +124,138 @@ html {
 .portfolio-feature-card--ballatro .card-title a,
 .portfolio-feature-card--ballatro .card-text a {
   color: #e6b3ff;
+}
+
+.card-title .btn-forum,
+.card-title .btn-doc {
+  margin-left: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.btn-forum {
+  background-color: #5f2f8a;
+  border: 2px solid #b58ce0;
+  color: #ffffff;
+}
+
+.btn-forum:hover,
+.btn-forum:focus {
+  background-color: #b58ce0;
+  border-color: #5f2f8a;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 0 0 0.2rem rgba(181, 140, 224, 0.5);
+}
+
+.btn-doc {
+  background-color: #275f93;
+  border: 2px solid #7fb8ef;
+  color: #ffffff;
+}
+
+.btn-doc:hover,
+.btn-doc:focus {
+  background-color: #7fb8ef;
+  border-color: #275f93;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 0 0 0.2rem rgba(127, 184, 239, 0.5);
+}
+
+.btn-nav {
+  background-color: #2d5f7f;
+  border: 2px solid #5a8fbd;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+}
+
+.btn-nav:hover,
+.btn-nav:focus {
+  background-color: #5a8fbd;
+  border-color: #2d5f7f;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 0 0 0.2rem rgba(90, 143, 189, 0.5);
+}
+
+.btn-year-one {
+  background-color: #2f6b35;
+  border: 2px solid #9ad0a2;
+  color: #ffffff;
+}
+
+.btn-year-one:hover,
+.btn-year-one:focus {
+  background-color: #9ad0a2;
+  border-color: #2f6b35;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 0 0 0.2rem rgba(154, 208, 162, 0.5);
+}
+
+.btn-year-two {
+  background-color: #1a3a52;
+  border: 2px solid #6dbbe0;
+  color: #ffffff;
+}
+
+.btn-year-two:hover,
+.btn-year-two:focus {
+  background-color: #6dbbe0;
+  border-color: #1a3a52;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 0 0 0.2rem rgba(109, 187, 224, 0.5);
+}
+
+.btn-year-three {
+  background-color: #7a1f2a;
+  border: 2px solid #e59aa4;
+  color: #ffffff;
+}
+
+.btn-year-three:hover,
+.btn-year-three:focus {
+  background-color: #e59aa4;
+  border-color: #7a1f2a;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 0 0 0.2rem rgba(229, 154, 165, 0.5);
+}
+
+.year-one-card,
+.year-two-card,
+.year-three-card {
+  color: #ffffff;
+}
+
+.year-one-card {
+  background-color: #234d28;
+  border: 2px solid #a9e0af;
+}
+
+.year-two-card {
+  background-color: #0f2840;
+  border: 2px solid #6dbbe0;
+}
+
+.year-three-card {
+  background-color: #6d1822;
+  border: 2px solid #f09aa5;
+}
+
+.year-one-card .card-title a,
+.year-one-card .card-text,
+.year-two-card .card-title a,
+.year-two-card .card-text,
+.year-three-card .card-title a,
+.year-three-card .card-text {
+  color: #ffffff;
 }
 
 @media (max-width: 767.98px) {

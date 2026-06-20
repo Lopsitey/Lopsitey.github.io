@@ -11,7 +11,7 @@
     <link href="/css/bootstrap-4.4.1.min.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="university-page">
     <div id="navbar-placeholder"></div>
 	<script src="/js/navbar-loader.js"></script>
     <section>
@@ -22,14 +22,21 @@
               <h1>University of Staffordshire</h1>
 			  <p><b class="border-top border-bottom border-info" style="padding-right: 8px; padding-left: 8px;">Games Design and Programming</b></p>
               <p>The following is a selection of the most interesting and meaningful projects I completed during my three years at university. Each one reflects a key stage in my academic development and creative growth, showing how my skills and ideas evolved over time. <a href="https://trello.com/w/jakeastlesuniversity" target="_blank">Here</a> are the Trello boards I used when on sprints for each project.</p>
-              <div class="mt-3">
-                <h4>Choose a Year</h4>
-                <div class="d-flex justify-content-center flex-wrap">
-                  <a class="btn btn-success btn-lg m-1" href="#Year-One" role="button">Year One</a>
-                  <a class="btn btn-info btn-lg m-1" href="#Year-Two" role="button">Year Two</a>
-                  <a class="btn btn-warning btn-lg m-1" href="#Year-Three" role="button">Year Three</a>
-                </div>
-              </div>
+				<div class="mt-3">
+					<h4 class="mb-2">Choose a Year</h4>
+					<div class="d-flex justify-content-center flex-wrap">
+						<a class="btn btn-year-one btn-lg m-1" href="#Year-One" role="button">Year One</a>
+						<a class="btn btn-year-two btn-lg m-1" href="#Year-Two" role="button">Year Two</a>
+						<a class="btn btn-year-three btn-lg m-1" href="#Year-Three" role="button">Year Three</a>
+					</div>
+				</div>
+				<div class="mt-4">
+					<h5 class="mb-2">Explore project resources:</h5>
+					<div class="d-flex justify-content-center flex-wrap">
+						<a class="btn btn-resource btn-forum m-1" href="#Forums" role="button">Forums</a>
+						<a class="btn btn-resource btn-doc m-1" href="#Documentation" role="button">Documentation</a>
+					</div>
+				</div>
             </div>
           </div>
         </div>
@@ -41,52 +48,52 @@
     <section>
 		  <div class="row row-cols-1 row-cols-md-3 g-4">
 			  <div class="col">
-				<div class="card h-100">
+				<div class="card h-100 year-one-card">
 				  <a href="https://github.com/Lopsitey/Mushroom-Mayhem" target="_blank"><img src="/media/Mushroom-Mayhem.png" class="card-img-top" alt="Image of the Mushroom Mayhem game"></a>
 				  <div class="card-body">
-					<h5 class="card-title"><a href="https://github.com/Lopsitey/Mushroom-Mayhem" target="_blank">Mushroom Mayhem</a></h5>
+					<h5 class="card-title"><a href="https://github.com/Lopsitey/Mushroom-Mayhem" target="_blank">Mushroom Mayhem</a><a href="/documents/Forums/Yr1/CS-For-Games.html" target="_blank" class="btn btn-forum">Forum</a></h5>
 					<p class="card-text">This is a horror game where you have to explore a map to collect food whilst avoiding the hungry mushrooms. With only a torch and a stun gun to aid you, can you survive?</p>
 				  </div>
 				</div>
 			  </div>
 			  <div class="col">
-				<div class="card h-100">
+				<div class="card h-100 year-one-card">
 				  <a href="https://github.com/Lopsitey/Pizza-Apocalypse" target="_blank"><img src="/media/Pizza-Apocalypse.png" class="card-img-top" alt="Image of the Pizza Apocalypse game"></a>
 				  <div class="card-body">
-					<h5 class="card-title"><a href="https://github.com/Lopsitey/Pizza-Apocalypse" target="_blank">Pizza Apocalypse</a></h5>
+					<h5 class="card-title"><a href="https://github.com/Lopsitey/Pizza-Apocalypse" target="_blank">Pizza Apocalypse</a><a href="/documents/Forums/Yr1/Game-Prototyping.html" target="_blank" class="btn btn-forum">Forum</a></h5>
 					<p class="card-text">This is a post-apocalyptic pizza delivery simulator. You are one of the few remaining and as a delivery driver it is your responsibility to feed the starving survivors. With only pizza at your disposal, can you fend off the zombies for long enough to complete your deliveries?</p>
 				  </div>
 				</div>
 			  </div>
 			  <div class="col">
-				<div class="card h-100">
+				<div class="card h-100 year-one-card">
 				  <a href="https://github.com/Lopsitey/Tank-Escape" target="_blank"><img src="/media/Tank-Escape.png" class="card-img-top" alt="Image of the Tank Escape game"></a>
 				  <div class="card-body">
-					<h5 class="card-title"><a href="https://github.com/Lopsitey/Tank-Escape" target="_blank">Tank Escape</a></h5>
+					<h5 class="card-title"><a href="https://github.com/Lopsitey/Tank-Escape" target="_blank">Tank Escape</a><a href="/documents/Forums/Yr1/Mechanic-Prototyping.html" target="_blank" class="btn btn-forum">Forum</a></h5>
 					<p class="card-text">This is a third-person shooter/puzzle game. You wake up in a tank on an alien planet and find yourself attacked. Your only method to escape is to fight past these strange creatures and figure out how to open the doors.</p>
 				  </div>
 				</div>
 			  </div>
 			  <div class="col pt-4">
-				<div class="card h-100">
-				  <a href="https://github.com/Lopsitey/OpenGL-FreeGLUT-Project" target="_blank"><img src="/media/OpenGL-Project.png" class="card-img-top" alt="Image of the OpenGL Project showing the meshes aand menu"></a>
+				<div class="card h-100 year-one-card">
+				  <a href="https://github.com/Lopsitey/OpenGL-FreeGLUT-Project" target="_blank"><img src="/media/OpenGL-Project.png" class="card-img-top" alt="Image of the OpenGL Project showing the meshes and menu"></a>
 				  <div class="card-body">
-					<h5 class="card-title"><a href="https://github.com/Lopsitey/OpenGL-FreeGLUT-Project" target="_blank">OpenGL Graphics Programming</a></h5>
+					<h5 class="card-title"><a href="https://github.com/Lopsitey/OpenGL-FreeGLUT-Project" target="_blank">OpenGL Graphics Programming</a><a href="/documents/Forums/Yr1/Graphics-Programming.html" target="_blank" class="btn btn-forum">Forum</a></h5>
 					<p class="card-text">This generates 3D graphics, which are loaded and textured with custom mesh and TGA loaders. They are then lit using the phong lighting model. The meshes include pyramids, cubes and one earth and terrain mesh. You can also control the camera, move the meshes, apply friction and type using a menu and the FreeFont library.</p>
 				  </div>
 				</div>
 			  </div>
 			  <div class="col pt-4">
-				<div class="card h-100">
+				<div class="card h-100 year-one-card">
 				  <a href="https://github.com/Lopsitey/Game-Prototyping-First-Project" target="_blank"><img src="/media/Jetpack-Parkour.png" class="card-img-top" alt="Image of the Jetpack Parkour demo, showing the zombie and character mid-air"></a>
 				  <div class="card-body">
-					<h5 class="card-title"><a href="https://github.com/Lopsitey/Game-Prototyping-First-Project" target="_blank">Jetpack Parkour Demo</a></h5>
+					<h5 class="card-title"><a href="https://github.com/Lopsitey/Game-Prototyping-First-Project" target="_blank">Jetpack Parkour Demo</a><a href="/documents/Forums/Yr1/Game-Prototyping.html" target="_blank" class="btn btn-forum">Forum</a></h5>
 					<p class="card-text">This was the first project I created using Unity 6's new input system. You have to do parkour with a jetpack whilst keeping it fuelled. I also added a zombie to punish you for falling back to the bottom.</p>
 				  </div>
 				</div>
 			  </div>
 			  <div class="col pt-4">
-				<div class="card h-100">
+				<div class="card h-100 year-one-card">
 				  <a href="https://github.com/Lopsitey/Module-1" target="_blank"><img src="/media/Module-1-Project.png" class="card-img-top" alt="Image of the text-based adventure game running with some code in the background"></a>
 				  <div class="card-body">
 					<h5 class="card-title"><a href="https://github.com/Lopsitey/Module-1" target="_blank">Module 1 Work</a></h5>
@@ -99,10 +106,10 @@
     <div class="text-center mt-4">
 		<h1 id="Year-Two">Year Two</h1>
 	</div>
-    <section>
+    <section id="year-two-section">
 		  <div class="row row-cols-1 row-cols-md-3 g-4">
 			  <div class="col">
-				<div class="card h-100">
+				<div class="card h-100 year-two-card">
 				  <a href="https://github.com/Lopsitey/AMD-Tank-Controller-ECS" target="_blank">
 					<video autoplay loop muted playsinline poster="/media/Tank ECS Fallback.png" class="card-img-top" aria-label="Animated preview of the AMD-Tank-Controller-ECS project">
 					  <source src="/media/Tank ECS.webm" type="video/webm">
@@ -117,7 +124,7 @@
 				</div>
 			  </div>
 			  <div class="col">
-				<div class="card h-100">
+				<div class="card h-100 year-two-card">
 				  <a href="https://github.com/Lopsitey/AI-Pathfinding-and-Decision-Making" target="_blank">
 					<video autoplay loop muted playsinline poster="/media/AI Pathfinding and Decision-Making Fallback.png" class="card-img-top" aria-label="Animated preview of the AI Pathfinding and Decision-Making project">
 					  <source src="/media/AI Pathfinding and Decision-Making.webm" type="video/webm">
@@ -126,22 +133,22 @@
 					</video>
 				  </a>
 				  <div class="card-body">
-					<h5 class="card-title"><a href="https://github.com/Lopsitey/AI-Pathfinding-and-Decision-Making" target="_blank">AI Pathfinding and Decision-Making</a></h5>
-					<p class="card-text">This involves several levels where the AI has to perform increasingly advanced pathfinding and decision-making. Including: flee, wander, obstacle avoidance, group movement, Markov and FSM managers along with Fuzzy Logic. I also had to write a <a href="/documents/A%20Research%20Review%20of%20Artificial%20Intelligence%20in%20Dying%20Light.docx" target="_blank">research essay</a> on a game that implemented AI well, I chose Dying Light.</p>
+					<h5 class="card-title"><a href="https://github.com/Lopsitey/AI-Pathfinding-and-Decision-Making" target="_blank">AI Pathfinding and Decision-Making</a><a href="/documents/Forums/Yr2/Game-AI.html" target="_blank" class="btn btn-forum">Forum</a><a href="/documents/A%20Research%20Review%20of%20Artificial%20Intelligence%20in%20Dying%20Light.docx" target="_blank" class="btn btn-doc">Documentation</a></h5>
+					<p class="card-text">This involves several levels where the AI has to perform increasingly advanced pathfinding and decision-making. Including: flee, wander, obstacle avoidance, group movement, Markov and FSM managers along with Fuzzy Logic. I also had to write a research essay on game AI, I chose Dying Light.</p>
 				  </div>
 				</div>
 			  </div>
 			  <div class="col">
-				<div class="card h-100">
+				<div class="card h-100 year-two-card">
 				  <a href="https://github.com/Lopsitey/Staffs-Uni-Stoke-G1-Collab" target="_blank"><img src="/media/Group Collaboration.png" class="card-img-top" alt="Image of the isometric puzzle game made in the group collaboration."></a>
 				  <div class="card-body">
-					<h5 class="card-title"><a href="https://github.com/Lopsitey/Staffs-Uni-Stoke-G1-Collab" target="_blank">Group Collaboration</a></h5>
-					<p class="card-text">I was in a team of 30 people with animators, artists, designers and programmers. I was the tech lead, this involved managing the GitHub repo and the programming team. I also had to write the full <a href="#Documentation">TDD</a>.</p>
+					<h5 class="card-title"><a href="https://github.com/Lopsitey/Staffs-Uni-Stoke-G1-Collab" target="_blank">Group Collaboration</a><a href="/documents/Forums/Yr2/Junior-Collab.html" target="_blank" class="btn btn-forum">Forum</a><a href="/documents/Technical%20Design%20Document.pdf" target="_blank" class="btn btn-doc">Documentation</a></h5>
+					<p class="card-text">I was in a team of 30 people with animators, artists, designers and programmers. I was the tech lead, this involved managing the GitHub repo and the programming team. This was also my first time writing an entire set of technical design documentation. This outlined the general code architechture for the project, folder structure, system breakdowns, GitHub practices and more.</p>
 				  </div>
 				</div>
 			  </div>
 			  <div class="col pt-4">
-				<div class="card h-100">
+				<div class="card h-100 year-two-card">
 				  <a href="https://github.com/Lopsitey/Audio-Development" target="_blank">
 					<video autoplay loop muted playsinline poster="/media/Audio Development Fallback.png" class="card-img-top" aria-label="Animated preview of the Audio Development project">
 					  <source src="/media/Audio Development.webm" type="video/webm">
@@ -150,13 +157,13 @@
 					</video>
 				  </a>
 				  <div class="card-body">
-					<h5 class="card-title"><a href="https://github.com/Lopsitey/Audio-Development" target="_blank">Audio Development</a></h5>
+					<h5 class="card-title"><a href="https://github.com/Lopsitey/Audio-Development" target="_blank">Audio Development</a><a href="/documents/Forums/Yr2/Audio-Development.html" target="_blank" class="btn btn-forum">Forum</a></h5>
 					<p class="card-text">This is a game consisting of 5 levels, each responding to the music's bass and beats differently. For instance, in level one, the floor, platforms, decorations and lights moved, scaled and flashed to the beat. </p>
 				  </div>
 				</div>
 			  </div>
 			  <div class="col pt-4">
-				<div class="card h-100">
+				<div class="card h-100 year-two-card">
 				  <a href="https://github.com/Lopsitey/First_Mechanics_Intro_Proj" target="_blank">
 					<video autoplay loop muted playsinline poster="/media/Intro To Mechanics Fallback.png" class="card-img-top" aria-label="Animated preview of the Introduction To Mechanics project">
 					  <source src="/media/Intro To Mechanics.webm" type="video/webm">
@@ -164,16 +171,16 @@
 					</video>
 				  </a>
 				  <div class="card-body">
-					<h5 class="card-title"><a href="https://github.com/Lopsitey/First_Mechanics_Intro_Proj" target="_blank">Introduction To Mechanics</a></h5>
+					<h5 class="card-title"><a href="https://github.com/Lopsitey/First_Mechanics_Intro_Proj" target="_blank">Introduction To Mechanics</a><a href="/documents/Forums/Yr2/Intro-To-Mechanics-1.html" target="_blank" class="btn btn-forum">Forum</a></h5>
 					<p class="card-text">This is about implementing some basic mechanics to help the game feel more smooth/juicy for the player. This involved coyote time/jump buffering etc. Also made a prototype level to test the mechanics.</p>
 				  </div>
 				</div>
 			  </div>
 			  <div class="col pt-4">
-				<div class="card h-100">
+				<div class="card h-100 year-two-card">
 				  <a href="https://github.com/Lopsitey/CPlusPlusGameJam25" target="_blank"><img src="/media/Unreal Engine C++.png" class="card-img-top" alt="Placeholder image for the CPlusPlusGameJam25 project"></a>
 				  <div class="card-body">
-					<h5 class="card-title"><a href="https://github.com/Lopsitey/CPlusPlusGameJam25" target="_blank">Unreal Engine C++</a></h5>
+					<h5 class="card-title"><a href="https://github.com/Lopsitey/CPlusPlusGameJam25" target="_blank">Unreal Engine C++</a><a href="/documents/Forums/Yr2/CPP-For-Engines.html" target="_blank" class="btn btn-forum">Forum</a></h5>
 					<p class="card-text">This was my first time using C++ in the context of UE5. It was very difficult, but I ended up managing to create a very basic game which involved collecting items to win. The crux of this project is more about the implementation of the systems and using the correct practices/interfaces etc, as opposed to the project itself.</p>
 				  </div>
 				</div>
@@ -186,7 +193,7 @@
     <section>
 		  <div class="row row-cols-1 row-cols-md-3 g-4">
 			  <div class="col">
-				<div class="card h-100">
+				<div class="card h-100 year-three-card">
 				  <img src="/media/bkg_06.jpg" class="card-img-top" alt="Placeholder image for Year Three project one">
 				  <div class="card-body">
 					<h5 class="card-title">Final Year Project</h5>
@@ -195,7 +202,7 @@
 				</div>
 			  </div>
 			  <div class="col">
-				<div class="card h-100">
+				<div class="card h-100 year-three-card">
 				  <img src="/media/bkg_06.jpg" class="card-img-top" alt="Placeholder image for Year Three project two">
 				  <div class="card-body">
 					<h5 class="card-title">Low-Level Gameplay</h5>
@@ -204,7 +211,7 @@
 				</div>
 			  </div>
 			  <div class="col">
-				<div class="card h-100">
+				<div class="card h-100 year-three-card">
 				  <img src="/media/bkg_06.jpg" class="card-img-top" alt="Placeholder image for Year Three project three">
 				  <div class="card-body">
 					<h5 class="card-title">Senior Group Collaboration</h5>
@@ -213,7 +220,7 @@
 				</div>
 			  </div>
 			  <div class="col pt-4">
-				<div class="card h-100">
+				<div class="card h-100 year-three-card">
 				  <img src="/media/bkg_06.jpg" class="card-img-top" alt="Placeholder image for Year Three project four">
 				  <div class="card-body">
 					<h5 class="card-title">Multiplayer Mechanics Prototyping</h5>
@@ -222,7 +229,7 @@
 				</div>
 			  </div>
 			  <div class="col pt-4">
-				<div class="card h-100">
+				<div class="card h-100 year-three-card">
 				  <img src="/media/bkg_06.jpg" class="card-img-top" alt="Placeholder image for Year Three project five">
 				  <div class="card-body">
 					<h5 class="card-title">Prototyping For Technical Designers</h5>
@@ -231,7 +238,7 @@
 				</div>
 			  </div>
 			  <div class="col pt-4">
-				<div class="card h-100">
+				<div class="card h-100 year-three-card">
 				  <img src="/media/bkg_06.jpg" class="card-img-top" alt="Placeholder image for Year Three project six">
 				  <div class="card-body">
 					<h5 class="card-title">Multiplayer Level Design</h5>
@@ -241,6 +248,29 @@
 			  </div>
 			</div>
     </section>
+	<div class="text-center mt-4">
+		<h1 id="Forums">Forums</h1>
+	</div>
+	<section>
+		<div class="container">
+			<h3>Year 1</h3>
+			<ul>
+				<li><a href="/documents/Forums/Yr1/CS-For-Games.html" target="_blank">CS for Games</a></li>
+				<li><a href="/documents/Forums/Yr1/Game-Prototyping.html" target="_blank">Game Prototyping</a></li>
+				<li><a href="/documents/Forums/Yr1/Graphics-Programming.html" target="_blank">Graphics Programming</a></li>
+				<li><a href="/documents/Forums/Yr1/Mechanic-Prototyping.html" target="_blank">Mechanic Prototyping</a></li>
+			</ul>
+			<h3>Year 2</h3>
+			<ul>
+				<li><a href="/documents/Forums/Yr2/Audio-Development.html" target="_blank">Audio Development</a></li>
+				<li><a href="/documents/Forums/Yr2/CPP-For-Engines.html" target="_blank">C++ for Engines</a></li>
+				<li><a href="/documents/Forums/Yr2/Game-AI.html" target="_blank">Game AI</a></li>
+				<li><a href="/documents/Forums/Yr2/Intro-To-Mechanics-1.html" target="_blank">Intro to Mechanics - Part 1</a></li>
+				<li><a href="/documents/Forums/Yr2/Intro-To-Mechanics-2.html" target="_blank">Intro to Mechanics - Part 2</a></li>
+				<li><a href="/documents/Forums/Yr2/Junior-Collab.html" target="_blank">Junior Collaboration</a></li>
+			</ul>
+		</div>
+	</section>
 	<div class="text-center mt-4">
 		<h1 id="Documentation">Documentation</h1>
 	</div>
