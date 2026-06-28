@@ -11,6 +11,34 @@ html {
   text-stroke: 1px #9fcdff;
 }
 
+/* Bootstrap 4 utilities/components retained by the existing page markup. */
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .donation-box {
   background-color: rgba(248, 249, 250, 0.95);
   border: 2px solid #b6d8ff;
@@ -98,6 +126,13 @@ html {
   text-align: left;
 }
 
+.portfolio-grid {
+  width: 100%;
+  max-width: 2400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .portfolio-feature-card {
   border: 0;
   border-radius: 1.25rem;
@@ -107,8 +142,11 @@ html {
 }
 
 .portfolio-feature-card .card-img-top {
-  height: 18rem;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
+  object-position: center;
 }
 
 .portfolio-feature-card .card-body {
@@ -277,6 +315,24 @@ html {
 .year-three-card .card-title a,
 .year-three-card .card-text {
   color: #ffffff;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .portfolio-feature-card .card-img-top {
+    aspect-ratio: 3 / 2;
+  }
+}
+
+@media (min-width: 2560px) {
+  .portfolio-feature-card .card-img-top {
+    aspect-ratio: 4 / 3;
+  }
 }
 
 @media (max-width: 767.98px) {
