@@ -1,5 +1,12 @@
 html {
-  scroll-padding-top: 50px;/*So the navbar doesn't cover the page when jumping to a new section*/
+  scroll-padding-top: 76px; /* Keep fixed navbar clear of anchor targets. */
+}
+
+.site-hero {
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
 }
 
 .navbar-nav .nav-link:not(.disabled) {
@@ -9,6 +16,12 @@ html {
 .navbar-nav .nav-link.active {
   -webkit-text-stroke: 1px #9fcdff;
   text-stroke: 1px #9fcdff;
+}
+
+.navbar-social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .donation-box {
@@ -98,17 +111,43 @@ html {
   text-align: left;
 }
 
+.portfolio-page {
+  overflow-x: hidden;
+}
+
+.portfolio-shell {
+  width: 100%;
+  max-width: 2400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: clamp(1rem, 3vw, 4rem);
+  padding-left: clamp(1rem, 3vw, 4rem);
+}
+
+.portfolio-grid .card {
+  overflow: hidden;
+}
+
+.portfolio-grid .card > a:first-child {
+  display: block;
+  overflow: hidden;
+}
+
+.portfolio-grid .card-img-top {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
 .portfolio-feature-card {
   border: 0;
   border-radius: 1.25rem;
   overflow: hidden;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   min-height: 100%;
-}
-
-.portfolio-feature-card .card-img-top {
-  height: 18rem;
-  object-fit: cover;
 }
 
 .portfolio-feature-card .card-body {
@@ -279,7 +318,29 @@ html {
   color: #ffffff;
 }
 
+@media (min-width: 1600px) {
+  .portfolio-grid .card-img-top {
+    aspect-ratio: 3 / 2;
+  }
+}
+
+@media (min-width: 2560px) {
+  .portfolio-grid .card-img-top {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-social-links {
+    padding-bottom: 0.75rem;
+  }
+}
+
 @media (max-width: 767.98px) {
+  .site-hero {
+    padding: 3rem 1rem;
+  }
+
   .latest-work-content {
     text-align: center;
   }
