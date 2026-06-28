@@ -1,28 +1,30 @@
 const navUrl = new URL('navbar.html', document.currentScript.src);
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   fetch(navUrl)
     .then(response => {
       if (!response.ok) throw new Error('Navbar load error');
       return response.text();
     })
     .then(html => {
-      document.getElementById('navbar-placeholder').innerHTML = html;
+      const placeholder = document.getElementById('navbar-placeholder');
+      if (!placeholder) return;
 
-      // After navbar is loaded, highlight the active link
-      const titleWords = document.title.trim().split(" ");
-      const currentPage = titleWords[titleWords.length - 1].toLowerCase();//e.g. "portfolio"
+      placeholder.innerHTML = html;
 
-      const navLinks = document.querySelectorAll('.nav-link');
-      navLinks.forEach(link => {
+      // Highlight the link matching the final word in the page title.
+      const titleWords = document.title.trim().split(/\s+/);
+      const currentPage = titleWords[titleWords.length - 1].toLowerCase();
+
+      placeholder.querySelectorAll('.nav-link').forEach(link => {
         const linkText = link.textContent.trim().toLowerCase();
-        if (linkText.includes(currentPage)) {
-          link.classList.add('active');
+        if (!linkText.includes(currentPage)) return;
 
-          // Add the screen reader span if it's not already there
-          if (!link.innerHTML.includes('sr-only')) {
-            link.innerHTML += ' <span class="sr-only">(current)</span>';
-          }
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+
+        if (!link.querySelector('.visually-hidden')) {
+          link.insertAdjacentHTML('beforeend', ' <span class="visually-hidden">(current)</span>');
         }
       });
     })
