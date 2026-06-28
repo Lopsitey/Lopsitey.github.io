@@ -7,20 +7,20 @@
     <meta name="description" content="Jake Astles - Programmer Portfolio, coding and games development, various projects, and contact info.">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Jake Astles | Home</title>
-    <!-- Bootstrap -->
-	<link href="/css/bootstrap-4.4.1.min.css" rel="stylesheet">
-	<link href="/css/custom.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="/css/custom.css" rel="stylesheet">
   </head>
   <body>
     <div id="navbar-placeholder"></div>
     <script src="/js/navbar-loader.js"></script>
+
     <section>
-      <div class="jumbotron text-center mb-0 mt-5">
+      <div class="site-hero text-center mb-0 mt-5">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <h1>Jake Astles</h1>
-			  <p><b class="border-top border-bottom border-info" style="padding-right: 8px; padding-left: 8px;">Programmer Portfolio</b></p>
+              <p><b class="border-top border-bottom border-info px-2">Programmer Portfolio</b></p>
               <p>Currently studying Games Design and Programming at the University of Staffordshire</p>
               <p><a class="btn btn-primary btn-lg" href="#About" role="button">Learn More</a></p>
             </div>
@@ -28,85 +28,85 @@
         </div>
       </div>
     </section>
+
     <section style="background-color:rgba(39,202,227,0.50);">
       <div class="container p-3">
-		<div class="row align-items-center">
-		  <div class="col-12 col-md-4 text-center">
-			<img src="/media/Profile Pic.png" class="img-fluid" alt="Jake Astles headshot"><!--img-fluid ensures the it doesn't overflow the container on smaller devices-->
-		  </div>
-		  <div class="col-12 col-md-8 text-center">
-			<h1 id="About">About Me</h1>
-			<div class="mx-auto" style="max-width: 90%; background-color:rgba(214,219,225,0.76); box-shadow: rgba(219,224,229,0.76) 0px 0px 10px 5px;">
-				<p>
-				Hi, I'm Jake Astles — a passionate and dedicated game developer. My journey into coding began in secondary school and quickly turned into a deep interest in the creative and technical sides of programming. What started with basic scripts in Unity has evolved into full-fledged projects using Unreal Engine 5, OpenGL, and both C++ and C# - my strongest programming languages. I've also worked with Python, HTML5, CSS, JavaScript, and MVC frameworks, and have developed several games and websites of my own.
-				</p>
-				<p>
-				Outside of class, I completed over 300 hours of work experience at a software house and took on leadership roles like House Captain and course representative, helping me grow as a team player in both technical and professional environments. I'm always interested in exploring new tools and languages, and I have a genuine passion for solving problems through code, whether that’s in game engines, graphics programming, or web development.
-				I see programming not just as a skill, but as a creative process that allows me to bring ideas to life. My long-term goal is to work with a leading studio like Ubisoft, contributing to large-scale projects that push the boundaries of design and technology.
-				</p>
-			</div>
-		  </div>
-		</div>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4 text-center">
+            <img src="/media/Profile Pic.png" class="img-fluid" alt="Jake Astles headshot">
+          </div>
+          <div class="col-12 col-md-8 text-center">
+            <h1 id="About">About Me</h1>
+            <div class="mx-auto" style="max-width: 90%; background-color:rgba(214,219,225,0.76); box-shadow: rgba(219,224,229,0.76) 0px 0px 10px 5px;">
+              <p>
+                Hi, I'm Jake Astles — a passionate and dedicated game developer. My journey into coding began in secondary school and quickly turned into a deep interest in the creative and technical sides of programming. What started with basic scripts in Unity has evolved into full-fledged projects using Unreal Engine 5, OpenGL, and both C++ and C# - my strongest programming languages. I've also worked with Python, HTML5, CSS, JavaScript, and MVC frameworks, and have developed several games and websites of my own.
+              </p>
+              <p>
+                Outside of class, I completed over 300 hours of work experience at a software house and took on leadership roles like House Captain and course representative, helping me grow as a team player in both technical and professional environments. I'm always interested in exploring new tools and languages, and I have a genuine passion for solving problems through code, whether that’s in game engines, graphics programming, or web development.
+                I see programming not just as a skill, but as a creative process that allows me to bring ideas to life. My long-term goal is to work with a leading studio like Ubisoft, contributing to large-scale projects that push the boundaries of design and technology.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
     <section>
-		<div class="jumbotron latest-work-section">
-			<div class="container">
-			  <div class="row">
-			  <div class="col-12 text-center">
-				<h2>Latest Work</h2>
-				<p>Here are some of my most recent projects</p>
-			  </div>
-			</div>
-			<div class="row">
-			  <div class="col-md-4 col-12">
-				<div class="latest-work-item text-center">
-				  <img class="latest-work-image" src="/media/Tank ECS Fallback.png" alt="Tank Controller and ECS Wave Spawner project image">
-				  <div class="latest-work-content">
-					<h5 class="mt-0 mb-1 lead"><a href="https://github.com/Lopsitey/AMD-Tank-Controller-ECS" target="_blank"><b>Tank Controller &amp; ECS Wave Spawner</b></a></h5>
-					<p class="mb-0">This is my advanced mechanics design project where you control a hyper-realistic tank. The tank has traction, suspension, throttle, differential steering, auto brake, auto camera snap, toggleable camera modes, 3 bullet types with realistic VFX, advanced UI and more. The ECS system uses a scripted importer to parse waves into the enemy spawner.</p>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-md-4 col-12">
-				<div class="latest-work-item text-center">
-				  <img class="latest-work-image" src="/media/AI Pathfinding and Decision-Making Fallback.png" alt="AI Pathfinding and Decision-Making project image">
-				  <div class="latest-work-content">
-					<h5 class="mt-0 mb-1 lead"><a href="https://github.com/Lopsitey/AI-Pathfinding-and-Decision-Making" target="_blank"><b>AI Pathfinding and Decision-Making</b></a></h5>
-					<p class="mb-0">This involves several levels where the AI has to perform increasingly advanced pathfinding and decision-making. Including: flee, wander, obstacle avoidance, group movement, Markov and FSM managers along with Fuzzy Logic.</p>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-md-4 col-12">
-				<div class="latest-work-item text-center">
-				  <img class="latest-work-image" src="/media/Group Collaboration.png" alt="Group Collaboration project image">
-				  <div class="latest-work-content">
-					<h5 class="mt-0 mb-1 lead"><a href="https://github.com/Lopsitey/Staffs-Uni-Stoke-G1-Collab" target="_blank"><b>Group Collaboration</b></a></h5>
-					<p class="mb-0">This is a group project. I was in a team of 30 people with animators, artists, designers and programmers. I was the tech lead, which involved managing the GitHub repo and the programming team. I also wrote the full technical design document.</p>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
+      <div class="site-hero latest-work-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2>Latest Work</h2>
+              <p>Here are some of my most recent projects</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-12">
+              <div class="latest-work-item text-center">
+                <img class="latest-work-image" src="/media/Tank ECS Fallback.png" alt="Tank Controller and ECS Wave Spawner project image">
+                <div class="latest-work-content">
+                  <h5 class="mt-0 mb-1 lead"><a href="https://github.com/Lopsitey/AMD-Tank-Controller-ECS" target="_blank" rel="noopener noreferrer"><b>Tank Controller &amp; ECS Wave Spawner</b></a></h5>
+                  <p class="mb-0">This is my advanced mechanics design project where you control a hyper-realistic tank. The tank has traction, suspension, throttle, differential steering, auto brake, auto camera snap, toggleable camera modes, 3 bullet types with realistic VFX, advanced UI and more. The ECS system uses a scripted importer to parse waves into the enemy spawner.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="latest-work-item text-center">
+                <img class="latest-work-image" src="/media/AI Pathfinding and Decision-Making Fallback.png" alt="AI Pathfinding and Decision-Making project image">
+                <div class="latest-work-content">
+                  <h5 class="mt-0 mb-1 lead"><a href="https://github.com/Lopsitey/AI-Pathfinding-and-Decision-Making" target="_blank" rel="noopener noreferrer"><b>AI Pathfinding and Decision-Making</b></a></h5>
+                  <p class="mb-0">This involves several levels where the AI has to perform increasingly advanced pathfinding and decision-making. Including: flee, wander, obstacle avoidance, group movement, Markov and FSM managers along with Fuzzy Logic.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="latest-work-item text-center">
+                <img class="latest-work-image" src="/media/Group Collaboration.png" alt="Group Collaboration project image">
+                <div class="latest-work-content">
+                  <h5 class="mt-0 mb-1 lead"><a href="https://github.com/Lopsitey/Staffs-Uni-Stoke-G1-Collab" target="_blank" rel="noopener noreferrer"><b>Group Collaboration</b></a></h5>
+                  <p class="mb-0">This is a group project. I was in a team of 30 people with animators, artists, designers and programmers. I was the tech lead, which involved managing the GitHub repo and the programming team. I also wrote the full technical design document.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
     <div id="contact-placeholder"></div>
-	<hr>
+    <hr>
     <footer class="text-center">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <p>Copyright © <span id="year"></span>
-				<script>year.textContent = new Date().getFullYear();</script> Jake Astles | <a href="https://www.streamlinehq.com/icons" target="_blank">Free Icons From Streamline</a> | <a href ="https://iconduck.com/sets/social-media-icon-set" target="_blank">Icons From Social Media Icon Set At Iconduck</a></p>
+            <p>Copyright © <span id="year"></span> Jake Astles | <a href="https://www.streamlinehq.com/icons" target="_blank" rel="noopener noreferrer">Free Icons From Streamline</a> | <a href="https://iconduck.com/sets/social-media-icon-set" target="_blank" rel="noopener noreferrer">Icons From Social Media Icon Set At Iconduck</a></p>
           </div>
         </div>
       </div>
     </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/js/jquery-3.4.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="/js/popper.min.js"></script>
-    <script src="/js/bootstrap-4.4.1.js"></script>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="/js/contact-form.js"></script>
     <script src="/js/donation-box-loader.js"></script>
     <script src="/js/contact-loader.js"></script>
