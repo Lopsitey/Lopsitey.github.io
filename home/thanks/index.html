@@ -7,7 +7,7 @@
     <meta name="description" content="Thank you page for Jake Astles contact form.">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Jake Astles | Thank You</title>
-    <link href="/css/bootstrap-5.0.2.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-4.4.1.min.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
   </head>
   <body>
@@ -25,12 +25,14 @@
       </div>
     </section>
 
-    <div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
+    <div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="thanksModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="thanksModalLabel">Thank You!</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
           <div class="modal-body">
             <p>
@@ -39,7 +41,7 @@
             </p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -59,16 +61,15 @@
       </div>
     </footer>
 
-    <!-- Bootstrap 5 does not require jQuery. Popper 2 is required by dropdowns. -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="/js/bootstrap-5.0.2.min.js"></script>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap-4.4.1.js"></script>
     <script src="/js/contact-form.js"></script>
     <script src="/js/contact-loader.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        const modalElement = document.getElementById('thanksModal');
-        if (modalElement) {
-          new bootstrap.Modal(modalElement).show();
+        if (typeof $ === 'function' && $('#thanksModal').length) {
+          $('#thanksModal').modal('show');
         }
       });
     </script>
