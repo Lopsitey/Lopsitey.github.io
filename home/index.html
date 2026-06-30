@@ -4,23 +4,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="darkreader-lock">
     <meta name="description" content="Jake Astles - Programmer Portfolio, coding and games development, various projects, and contact info.">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Jake Astles | Home</title>
     <!-- Bootstrap -->
-	<link href="/css/bootstrap-4.4.1.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-5.0.2.min.css" rel="stylesheet">
 	<link href="/css/custom.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="home-page">
     <div id="navbar-placeholder"></div>
+    <script src="/js/site-interactions.js"></script>
     <script src="/js/navbar-loader.js"></script>
-    <section>
+    <section class="hero-section">
       <div class="jumbotron text-center mb-0 mt-5">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <h1>Jake Astles</h1>
-			  <p><b class="border-top border-bottom border-info" style="padding-right: 8px; padding-left: 8px;">Programmer Portfolio</b></p>
+			  <p><b class="section-kicker">Programmer Portfolio</b></p>
               <p>Currently studying Games Design and Programming at the University of Staffordshire</p>
               <p><a class="btn btn-primary btn-lg" href="#About" role="button">Learn More</a></p>
             </div>
@@ -28,15 +30,15 @@
         </div>
       </div>
     </section>
-    <section style="background-color:rgba(39,202,227,0.50);">
+    <section class="site-band site-band--teal">
       <div class="container p-3">
 		<div class="row align-items-center">
 		  <div class="col-12 col-md-4 text-center">
-			<img src="/media/Profile Pic.png" class="img-fluid" alt="Jake Astles headshot"><!--img-fluid ensures the it doesn't overflow the container on smaller devices-->
+			<img src="/media/Profile Pic.webp" class="img-fluid" alt="Jake Astles headshot"><!--img-fluid ensures the it doesn't overflow the container on smaller devices-->
 		  </div>
 		  <div class="col-12 col-md-8 text-center">
 			<h1 id="About">About Me</h1>
-			<div class="mx-auto" style="max-width: 90%; background-color:rgba(214,219,225,0.76); box-shadow: rgba(219,224,229,0.76) 0px 0px 10px 5px;">
+			<div class="about-card mx-auto">
 				<p>
 				Hi, I'm Jake Astles — a passionate and dedicated game developer. My journey into coding began in secondary school and quickly turned into a deep interest in the creative and technical sides of programming. What started with basic scripts in Unity has evolved into full-fledged projects using Unreal Engine 5, OpenGL, and both C++ and C# - my strongest programming languages. I've also worked with Python, HTML5, CSS, JavaScript, and MVC frameworks, and have developed several games and websites of my own.
 				</p>
@@ -61,7 +63,7 @@
 			<div class="row">
 			  <div class="col-md-4 col-12">
 				<div class="latest-work-item text-center">
-				  <img class="latest-work-image" src="/media/Tank ECS Fallback.png" alt="Tank Controller and ECS Wave Spawner project image">
+				  <img class="latest-work-image" src="/media/Tank ECS Fallback.webp" alt="Tank Controller and ECS Wave Spawner project image">
 				  <div class="latest-work-content">
 					<h5 class="mt-0 mb-1 lead"><a href="https://github.com/Lopsitey/AMD-Tank-Controller-ECS" target="_blank"><b>Tank Controller &amp; ECS Wave Spawner</b></a></h5>
 					<p class="mb-0">This is my advanced mechanics design project where you control a hyper-realistic tank. The tank has traction, suspension, throttle, differential steering, auto brake, auto camera snap, toggleable camera modes, 3 bullet types with realistic VFX, advanced UI and more. The ECS system uses a scripted importer to parse waves into the enemy spawner.</p>
@@ -70,7 +72,7 @@
 			  </div>
 			  <div class="col-md-4 col-12">
 				<div class="latest-work-item text-center">
-				  <img class="latest-work-image" src="/media/AI Pathfinding and Decision-Making Fallback.png" alt="AI Pathfinding and Decision-Making project image">
+				  <img class="latest-work-image" src="/media/AI Pathfinding and Decision-Making Fallback.webp" alt="AI Pathfinding and Decision-Making project image">
 				  <div class="latest-work-content">
 					<h5 class="mt-0 mb-1 lead"><a href="https://github.com/Lopsitey/AI-Pathfinding-and-Decision-Making" target="_blank"><b>AI Pathfinding and Decision-Making</b></a></h5>
 					<p class="mb-0">This involves several levels where the AI has to perform increasingly advanced pathfinding and decision-making. Including: flee, wander, obstacle avoidance, group movement, Markov and FSM managers along with Fuzzy Logic.</p>
@@ -79,7 +81,7 @@
 			  </div>
 			  <div class="col-md-4 col-12">
 				<div class="latest-work-item text-center">
-				  <img class="latest-work-image" src="/media/Group Collaboration2.png" alt="Group Collaboration project image">
+				  <img class="latest-work-image" src="/media/Group Collaboration2.webp" alt="Group Collaboration project image">
 				  <div class="latest-work-content">
 					<h5 class="mt-0 mb-1 lead"><a href="https://github.com/Lopsitey/Staffs-Uni-Stoke-G1-Collab" target="_blank"><b>Group Collaboration</b></a></h5>
 					<p class="mb-0">This is a group project. I was in a team of 30 people with animators, artists, designers and programmers. I was the tech lead, which involved managing the GitHub repo and the programming team. I also wrote the full technical design document.</p>
@@ -91,24 +93,10 @@
 		</div>
     </section>
     <div id="contact-placeholder"></div>
-	<hr>
-    <footer class="text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p>Copyright © <span id="year"></span>
-				<script>year.textContent = new Date().getFullYear();</script> Jake Astles | <a href="https://www.streamlinehq.com/icons" target="_blank">Free Icons From Streamline</a> | <a href ="https://iconduck.com/sets/social-media-icon-set" target="_blank">Icons From Social Media Icon Set At Iconduck</a></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/js/jquery-3.4.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="/js/popper.min.js"></script>
-    <script src="/js/bootstrap-4.4.1.js"></script>
+    <div id="footer-placeholder"></div>
     <script src="/js/contact-form.js"></script>
     <script src="/js/donation-box-loader.js"></script>
     <script src="/js/contact-loader.js"></script>
+    <script src="/js/footer-loader.js"></script>
   </body>
 </html>

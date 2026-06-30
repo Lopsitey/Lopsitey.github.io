@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(html => {
       document.getElementById('navbar-placeholder').innerHTML = html;
+      window.initializeSiteInteractions?.(document.getElementById('navbar-placeholder'));
 
       // After navbar is loaded, highlight the active link
       const titleWords = document.title.trim().split(" ");
@@ -20,8 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
           link.classList.add('active');
 
           // Add the screen reader span if it's not already there
-          if (!link.innerHTML.includes('sr-only')) {
-            link.innerHTML += ' <span class="sr-only">(current)</span>';
+          if (!link.innerHTML.includes('visually-hidden')) {
+            link.innerHTML += ' <span class="visually-hidden">(current)</span>';
           }
         }
       });

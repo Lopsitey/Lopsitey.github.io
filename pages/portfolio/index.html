@@ -4,108 +4,105 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="darkreader-lock">
     <meta name="description" content="Jake Astles - Programmer Portfolio, coding and games development, various projects, and contact info.">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Jake Astles | Portfolio</title><!--Last word must be navbar link name for link to be highlighted-->
     <!-- Bootstrap -->
-    <link href="/css/bootstrap-4.4.1.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-5.0.2.min.css" rel="stylesheet">
 	<link href="/css/custom.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="portfolio-page">
     <div id="navbar-placeholder"></div>
+	<script src="/js/site-interactions.js"></script>
 	<script src="/js/navbar-loader.js"></script>
-    <section>
+    <section class="hero-section">
       <div class="jumbotron text-center mt-5">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <h1>Portfolio</h1>
-			  <p><b class="border-top border-bottom border-info" style="padding-right: 8px; padding-left: 8px;"><a href="#Personal-Section">Personal</a> &amp; <a href="#Professional-Section">Professional</a></b></p>
+			  <p><b class="section-kicker">Personal &amp; Professional</b></p>
               <p>Welcome to my full portfolio. This is a curated selection of my most engaging and creative projects, showcasing my growth as a designer and programmer. These works span a range of challenges and technologies, reflecting my passion for interactive experiences and technical innovation.</p>
-              <p><a class="btn btn-primary btn-lg" href="#Personal-Section" role="button">Explore</a></p>
+              <div class="portfolio-actions d-flex justify-content-center flex-wrap">
+                <a class="btn btn-portfolio-personal btn-lg" href="#Personal-Section" role="button">Personal</a>
+                <a class="btn btn-portfolio-professional btn-lg" href="#Professional-Section" role="button">Professional</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="text-center">
+    <div class="text-center pt-5">
 		<h1 id="Personal-Section">Personal</h1>
 	</div>
-    <section>
-		  <div class="row g-4">
-			  <div class="col-12 col-lg-6">
-				<div class="card h-100 portfolio-feature-card portfolio-feature-card--ggj">
-				  <a href="https://github.com/Lopsitey/GGJ-2026" target="_blank"><img src="/media/Survival-By-Spear.png" class="card-img-top" alt="Preview image for GGJ 2026"></a>
+    <section class="portfolio-section">
+		  <div class="portfolio-project-grid portfolio-project-grid--wide-rails">
+				<div class="card portfolio-feature-card portfolio-feature-card--ggj">
+				  <a href="https://github.com/Lopsitey/GGJ-2026" target="_blank"><img src="/media/Survival-By-Spear.webp" class="card-img-top" alt="Preview image for GGJ 2026"></a>
 				  <div class="card-body">
 					<h5 class="card-title"><a href="https://github.com/Lopsitey/GGJ-2026" target="_blank">GGJ 2026</a></h5>
 					<p class="card-text">This is the game we made for GGJ 2026. It involves throwing spears to defeat enemies and survive. Enemies drop mask powerups which change the spear type used. You also have a hunger meter which makes you massive and multiplies your damage temporarily after killing/eating enough enemies. After the jam we decided to make an improved <a href="https://github.com/Lopsitey/Survival-By-Spear" target="_blank">version</a> as we had a few issues with the original, such as some of the incompleted mechanics and inconsistent AI.</p>
 				  </div>
 				</div>
-			  </div>
-			  <div class="col-12 col-lg-6">
-				<div class="card h-100 portfolio-feature-card portfolio-feature-card--ballatro">
-				  <a href="https://github.com/Lopsitey/Pinball-Game" target="_blank"><img src="/media/Ballatro.png" class="card-img-top" alt="Preview image for Ballatro"></a>
+				<div class="card portfolio-feature-card portfolio-feature-card--ballatro">
+				  <a href="https://github.com/Lopsitey/Pinball-Game" target="_blank"><img src="/media/Ballatro.webp" class="card-img-top" alt="Preview image for Ballatro"></a>
 				  <div class="card-body">
 					<h5 class="card-title"><a href="https://github.com/Lopsitey/Pinball-Game" target="_blank">Ballatro</a></h5>
 					<p class="card-text">A toon-styled pixel pinball roguelike inspired by Balatro and other genre mashups. It adds powerups, a shop and placeable trinkets to a classic pinball loop, letting you chain together strong builds and adapt your run as the table gets more chaotic.</p>
 				  </div>
 				</div>
-			  </div>
-			  <div class="col pt-4">
-				  <div class="card h-100">
-					  <a href="https://github.com/Lopsitey/" target="_blank"><img src="/media/bkg_06.jpg" class="card-img-top" alt="Image of "></a>
+				<div class="card portfolio-wide-coming-soon-card">
+				  <div class="card-body">
+					  <h5 class="card-title"><a href="https://github.com/Lopsitey/" target="_blank">Coming soon!</a></h5>
+					  <p class="card-text">A larger personal project slot for anything that deserves a proper spotlight once it is ready.</p>
+				  </div>
+				</div>
+				<div class="portfolio-side-stack portfolio-side-stack--left">
+				  <div class="card portfolio-coming-soon-card">
+					  <a href="https://github.com/Lopsitey/" target="_blank"><img src="/media/bkg_06.jpg" class="card-img-top" alt="Placeholder image for a future personal project"></a>
 					  <div class="card-body">
 						  <h5 class="card-title"><a href="https://github.com/Lopsitey/" target="_blank">Coming soon!</a></h5>
 						  <p class="card-text">Currently doing more projects and jams in my spare time, I'll upload them as soon as I think they're ready!</p>
 					  </div>
 				  </div>
-			  </div>
-			  <div class="col pt-4">
-				  <div class="card h-100">
-					  <a href="https://github.com/Lopsitey/" target="_blank"><img src="/media/bkg_06.jpg" class="card-img-top" alt="Image of "></a>
+				  <div class="card portfolio-coming-soon-card">
+					  <a href="https://github.com/Lopsitey/" target="_blank"><img src="/media/bkg_06.jpg" class="card-img-top" alt="Placeholder image for a future personal project"></a>
 					  <div class="card-body">
 						  <h5 class="card-title"><a href="https://github.com/Lopsitey/" target="_blank">Coming soon!</a></h5>
 						  <p class="card-text">Currently doing more projects and jams in my spare time, I'll upload them as soon as I think they're ready!</p>
 					  </div>
 				  </div>
-			  </div>
-			  <div class="col pt-4">
-				  <div class="card h-100">
-					  <a href="https://github.com/Lopsitey/" target="_blank"><img src="/media/bkg_06.jpg" class="card-img-top" alt="Image of "></a>
+				</div>
+				<div class="portfolio-side-stack portfolio-side-stack--right">
+				  <div class="card portfolio-coming-soon-card">
+					  <a href="https://github.com/Lopsitey/" target="_blank"><img src="/media/bkg_06.jpg" class="card-img-top" alt="Placeholder image for a future personal project"></a>
 					  <div class="card-body">
 						  <h5 class="card-title"><a href="https://github.com/Lopsitey/" target="_blank">Coming soon!</a></h5>
 						  <p class="card-text">Currently doing more projects and jams in my spare time, I'll upload them as soon as I think they're ready!</p>
 					  </div>
 				  </div>
-			  </div>
+				  <div class="card portfolio-coming-soon-card">
+					  <a href="https://github.com/Lopsitey/" target="_blank"><img src="/media/bkg_06.jpg" class="card-img-top" alt="Placeholder image for a future personal project"></a>
+					  <div class="card-body">
+						  <h5 class="card-title"><a href="https://github.com/Lopsitey/" target="_blank">Coming soon!</a></h5>
+						  <p class="card-text">Currently doing more projects and jams in my spare time, I'll upload them as soon as I think they're ready!</p>
+					  </div>
+				  </div>
+				</div>
 			</div>
     </section>
 	<div class="text-center pt-5">
 		<h1 id="Professional-Section">Professional</h1>
 	</div>
-	  <section>
-		  <h3 class="text-center pt-3">We're currently working on the full release of <a href="https://zacincz.itch.io/steps-to-the-stars" target="_blank">Steps To The Stars</a>!</h3>
+	  <section class="portfolio-section">
+		  <h3 class="text-center">We're currently working on the full release of <a href="https://zacincz.itch.io/steps-to-the-stars" target="_blank">Steps To The Stars</a>!</h3>
 	  </section>
-    <hr>
     <div id="contact-placeholder"></div>
-    <hr>
-    <footer class="text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p>Copyright © <span id="year"></span>
-				<script>year.textContent = new Date().getFullYear();</script> Jake Astles | <a href="https://www.streamlinehq.com/icons" target="_blank">Free Icons From Streamline</a> | <a href ="https://iconduck.com/sets/social-media-icon-set" target="_blank">Icons From Social Media Icon Set At Iconduck</a></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/js/jquery-3.4.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/js/popper.min.js"></script>
-    <script src="/js/bootstrap-4.4.1.js"></script>
+    <div id="footer-placeholder"></div>
     <script src="/js/contact-form.js"></script>
     <script src="/js/donation-box-loader.js"></script>
     <script src="/js/contact-loader.js"></script>
+    <script src="/js/footer-loader.js"></script>
   </body>
 </html>

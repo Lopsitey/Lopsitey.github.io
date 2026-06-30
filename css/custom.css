@@ -1,79 +1,354 @@
-html {
-  scroll-padding-top: 50px;/*So the navbar doesn't cover the page when jumping to a new section*/
+:root {
+  color-scheme: dark;
+  --site-bg: #151919;
+  --site-bg-deep: #101414;
+  --site-surface: #232627;
+  --site-surface-soft: #252d2f;
+  --site-panel: #182021;
+  --site-text: #d8d1c9;
+  --site-text-strong: #efe8df;
+  --site-muted: #c3bab2;
+  --site-border: #354143;
+  --site-link: #40a7ff;
+  --site-link-hover: #78c4ff;
+  --site-accent: #128293;
+  --site-accent-dark: #0f6570;
+  --site-green: #1c6b33;
+  --site-blue: #17496f;
+  --site-red: #842032;
+  --site-purple: #532282;
+  --site-content-max: 1360px;
+  --site-wide-max: 1760px;
+  --site-university-wide-max: 1936px;
+  --site-portfolio-wide-max: 2380px;
+  --site-page-gutter: clamp(1.25rem, 5vw, 7rem);
 }
 
-.navbar-nav .nav-link:not(.disabled) {
+html {
+  scroll-padding-top: 4.75rem;
+}
+
+body {
+  background: var(--site-bg);
+  color: var(--site-text);
+}
+
+a {
+  color: var(--site-link);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--site-link-hover);
+  text-decoration: underline;
+}
+
+.btn:hover,
+.btn:focus,
+.navbar a:hover,
+.navbar a:focus {
+  text-decoration: none;
+}
+
+hr {
+  color: var(--site-border);
+  opacity: 1;
+}
+
+.navbar {
+  padding: 0.25rem 1rem;
+}
+
+.navbar.bg-info {
+  background-color: var(--site-accent) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.navbar-nav .nav-link:not(.disabled),
+.navbar-brand {
   color: #ffffff !important;
 }
 
 .navbar-nav .nav-link.active {
-  -webkit-text-stroke: 1px #9fcdff;
-  text-stroke: 1px #9fcdff;
+  color: deepskyblue !important;
+  text-shadow: 0 0 0.05rem #ffffff;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.navbar .social-links {
+  gap: 1.35rem;
+}
+
+.navbar .social-links img {
+  display: block;
+  height: 2.1875rem;
+  width: 2.1875rem;
+  object-fit: contain;
+}
+
+.dropdown-menu {
+  background-color: var(--site-surface);
+  border-color: var(--site-border);
+}
+
+.dropdown-item {
+  color: var(--site-text);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--site-surface-soft);
+  color: var(--site-text-strong);
+}
+
+.jumbotron {
+  background-color: var(--site-surface);
+  color: var(--site-text);
+  margin-bottom: 0;
+  padding: 4rem 2rem;
+}
+
+.home-page .hero-section .jumbotron {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.jumbotron h1,
+.jumbotron h2,
+.section-title {
+  color: var(--site-text-strong);
+}
+
+.section-kicker {
+  border-top: 1px solid var(--site-accent);
+  border-bottom: 1px solid var(--site-accent);
+  color: var(--site-text-strong);
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+.page-shell,
+.project-grid-section,
+.play-projects-section,
+.portfolio-section,
+.work-page .project-grid-section {
+  width: min(calc(100% - (var(--site-page-gutter) * 2)), var(--site-wide-max));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-grid-section,
+.play-projects-section,
+.portfolio-section {
+  padding: 1.5rem 0 2.5rem 0;
+}
+
+.portfolio-page .portfolio-section {
+  width: min(calc(100% - (var(--site-page-gutter) * 2)), var(--site-portfolio-wide-max));
+}
+
+.reference-section,
+.reference-library {
+  width: min(calc(100% - (var(--site-page-gutter) * 2)), var(--site-content-max));
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 0;
+}
+
+.reference-band {
+  background-color: var(--site-surface);
+}
+
+.reference-library {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem clamp(3rem, 8vw, 9rem);
+  justify-content: center;
+  text-align: left;
+}
+
+.reference-column {
+  flex: 1 1 28rem;
+  max-width: 42rem;
+}
+
+.reference-column h1 {
+  text-align: left;
+}
+
+.reference-year {
+  margin-top: 1.25rem;
+}
+
+.reference-year ul {
+  margin-bottom: 0;
+}
+
+.site-band {
+  padding: 0;
+}
+
+.site-band--teal {
+  background-color: #175b65;
+}
+
+.about-card {
+  background-color: rgba(18, 25, 26, 0.96);
+  box-shadow: 1rem -0.85rem 0 rgba(204, 210, 211, 0.22), 0 0.85rem 1.4rem rgba(0, 0, 0, 0.6);
+  max-width: 54rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.about-card::before {
+  content: "";
+  display: none;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+.card,
+.modal-content,
+.donation-box {
+  background-color: var(--site-panel);
+  border: 1px solid var(--site-border);
+  color: var(--site-text);
+}
+
+.card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-title,
+.card-title a,
+.modal-title {
+  color: var(--site-text-strong);
+}
+
+.card-text {
+  color: var(--site-text);
+}
+
+.card-img-top {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.form-control {
+  background-color: var(--site-bg-deep);
+  border-color: var(--site-border);
+  color: var(--site-text);
+}
+
+.form-control:focus {
+  background-color: var(--site-bg-deep);
+  border-color: var(--site-link);
+  box-shadow: 0 0 0 0.2rem rgba(64, 167, 255, 0.2);
+  color: var(--site-text-strong);
 }
 
 .donation-box {
-  background-color: rgba(248, 249, 250, 0.95);
-  border: 2px solid #b6d8ff;
+  border-color: var(--site-link);
   border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
 }
 
 .donation-box-wrapper {
   margin-top: 3rem;
 }
 
-.btn-paypal {
-  background-color: #ffc439;
-  border-color: #ffc439;
-  color: #003087;
-  font-weight: 600;
-}
-
-.btn-paypal:hover {
-  border-color: #0d6efd;
-  background-color: #0d6efd;
-  color: #ffffff;
-}
-
-.btn-paypal:focus {
-  background-color: #0d6efd;
-  border-color: #000000;
-  color: #ffffff;
-}
-
-.btn-paypal:active {
-  background-color: #ffffff;
-  border-color: #ffffff;
-  color: #0d6efd;
-}
-
 .donation-box p:last-of-type {
   margin-bottom: 1.5rem;
 }
 
-.university-page {
+.btn-paypal {
+  background-color: #f6bf38;
+  border-color: #c28a00;
+  color: #0290ff;
+  text-shadow: #0dcaf0 0 0 1px;
+  text-emphasis: none;
+  font-weight: 600;
+}
+
+.btn-paypal:hover,
+.btn-paypal:focus {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.28);
+  color: #ffffff;
+}
+
+.latest-work-item {
+  height: 100%;
+  margin: 0 auto 1.5rem;
+  max-width: clamp(19rem, 26vw, 31rem);
+  padding: 0;
+}
+
+.latest-work-image {
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--site-border);
+  border-radius: 0.5rem;
+  display: block;
+  height: auto;
+  margin: 0 auto 1rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.latest-work-content {
+  text-align: left;
+  width: 100%;
+}
+
+.latest-work-section .col-md-4 {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .latest-work-section .col-md-4:not(:last-child)::after {
+    background-color: rgba(255, 255, 255, 0.12);
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0.25rem;
+    bottom: 0.25rem;
+    width: 1px;
+  }
+}
+
+.university-page,
+.play-page,
+.portfolio-page {
   overflow-x: hidden;
 }
 
-.university-page section > .row {
-  margin-left: 0;
-  margin-right: 0;
+.university-page .project-grid-section .row,
+.play-page .play-projects-section .row {
+  --bs-gutter-x: 1.75rem;
+  --bs-gutter-y: 1.75rem;
 }
 
-.university-page .card {
-  overflow: hidden;
+.university-page .project-grid-section {
+  width: min(calc(100% - (var(--site-page-gutter) * 2)), calc(var(--site-university-wide-max) * 1.1));
 }
 
-.university-page .card > a:first-child {
-  display: block;
-  overflow: hidden;
+.university-page .card-img-top,
+.play-page .card-img-top {
+  height: clamp(13rem, 16vw, 19rem);
 }
 
-.university-page .card-img-top {
-  display: block;
-  width: 100%;
-  height: 15.5rem;
-  object-fit: cover;
+.university-page video.card-img-top {
+  background-color: #000000;
 }
 
 .university-page .game-ai-media {
@@ -81,45 +356,199 @@ html {
   transform-origin: left center;
 }
 
-.latest-work-item {
-  margin-bottom: 1.5rem;
+.card-title .btn-forum,
+.card-title .btn-doc,
+.card-title .btn-trello {
+  margin-left: 0.5rem;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  vertical-align: middle;
 }
 
-.latest-work-image {
-  display: block;
-  width: clamp(10vw, 12vw, 15vw);
-  min-width: 120px;
-  max-width: 220px;
-  height: auto;
-  margin: 0 auto 0.75rem;
+.btn-forum,
+.btn-doc,
+.btn-trello,
+.btn-year-one,
+.btn-year-two,
+.btn-year-three,
+.btn-portfolio-personal,
+.btn-portfolio-professional {
+  border-width: 2px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-weight: 550;
+  line-height: 1.5;
+  transition: background-color 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
 }
 
-.latest-work-content {
-  text-align: left;
+.btn-year-one,
+.btn-year-two,
+.btn-year-three,
+.btn-portfolio-personal,
+.btn-portfolio-professional {
+  min-width: 7rem;
+}
+
+.btn-forum:hover,
+.btn-forum:focus,
+.btn-doc:hover,
+.btn-doc:focus,
+.btn-trello:hover,
+.btn-trello:focus,
+.btn-year-one:hover,
+.btn-year-one:focus,
+.btn-year-two:hover,
+.btn-year-two:focus,
+.btn-year-three:hover,
+.btn-year-three:focus,
+.btn-portfolio-personal:hover,
+.btn-portfolio-personal:focus,
+.btn-portfolio-professional:hover,
+.btn-portfolio-professional:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-forum {
+  background-color: var(--site-purple);
+  border-color: #8a55bd;
+}
+
+.btn-forum:hover,
+.btn-forum:focus {
+  background-color: #65319a;
+  border-color: #bb8deb;
+  box-shadow: 0 0 0 0.2rem rgba(187, 141, 235, 0.28);
+}
+
+.btn-doc,
+.btn-portfolio-professional {
+  background-color: var(--site-blue);
+  border-color: #3f83b4;
+}
+
+.btn-doc:hover,
+.btn-doc:focus,
+.btn-portfolio-professional:hover,
+.btn-portfolio-professional:focus {
+  background-color: #1f5d8a;
+  border-color: #7bb9e6;
+  box-shadow: 0 0 0 0.2rem rgba(123, 185, 230, 0.28);
+}
+
+.btn-trello {
+  background-color: #735915;
+  border-color: #c49d35;
+}
+
+.btn-trello:hover,
+.btn-trello:focus {
+  background-color: #87691b;
+  border-color: #e1bd56;
+  box-shadow: 0 0 0 0.2rem rgba(225, 189, 86, 0.28);
+}
+
+.btn-year-one,
+.btn-portfolio-personal {
+  background-color: var(--site-green);
+  border-color: #4d9c62;
+}
+
+.btn-year-one:hover,
+.btn-year-one:focus,
+.btn-portfolio-personal:hover,
+.btn-portfolio-personal:focus {
+  background-color: #237d3e;
+  border-color: #7ad18d;
+  box-shadow: 0 0 0 0.2rem rgba(122, 209, 141, 0.28);
+}
+
+.btn-year-two {
+  background-color: var(--site-blue);
+  border-color: #3f83b4;
+}
+
+.btn-year-two:hover,
+.btn-year-two:focus {
+  background-color: #1f5d8a;
+  border-color: #7bb9e6;
+  box-shadow: 0 0 0 0.2rem rgba(123, 185, 230, 0.28);
+}
+
+.btn-year-three {
+  background-color: var(--site-red);
+  border-color: #b14b5d;
+}
+
+.btn-year-three:hover,
+.btn-year-three:focus {
+  background-color: #9a293c;
+  border-color: #e38a99;
+  box-shadow: 0 0 0 0.2rem rgba(227, 138, 153, 0.28);
+}
+
+.university-page .card-title > a:not(.btn) {
+  text-decoration: none;
+}
+
+.university-page .card-title > a:not(.btn):hover,
+.university-page .card-title > a:not(.btn):focus {
+  text-decoration: underline;
+}
+
+.year-one-card {
+  background-color: #163f24;
+  border-color: #2d7e42;
+}
+
+.year-two-card {
+  background-color: #102e47;
+  border-color: #2f6c9c;
+}
+
+.year-three-card {
+  background-color: #521923;
+  border-color: #954253;
+}
+
+.portfolio-page .jumbotron {
+  padding-bottom: clamp(4rem, 8vw, 7rem);
+}
+
+.portfolio-actions {
+  gap: 0.75rem;
+}
+
+.portfolio-project-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.portfolio-side-stack {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.portfolio-feature-card,
+.portfolio-coming-soon-card {
+  min-height: 0;
 }
 
 .portfolio-feature-card {
   border: 0;
-  border-radius: 1.25rem;
-  overflow: hidden;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  min-height: 100%;
+  height: 100%;
 }
 
 .portfolio-feature-card .card-img-top {
-  height: 18rem;
-  object-fit: cover;
+  height: clamp(18rem, 20vw, 30rem);
 }
 
-.portfolio-feature-card .card-body {
+.portfolio-feature-card .card-body,
+.portfolio-coming-soon-card .card-body {
   padding: 1.5rem;
-}
-
-.portfolio-feature-card .card-title {
-  margin-bottom: 0.75rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .portfolio-feature-card .card-text {
@@ -128,159 +557,232 @@ html {
 }
 
 .portfolio-feature-card--ggj {
-  background: linear-gradient(180deg, #143d3d 0%, #0f1f28 100%);
-  color: #f7fffd;
+  background-color: #09282d;
+  color: #abf3ed;
 }
 
+.portfolio-feature-card--ggj .card-body {
+  background-color: #09282d;
+}
+
+.portfolio-feature-card--ggj .card-title,
 .portfolio-feature-card--ggj .card-title a,
+.portfolio-feature-card--ggj .card-text,
 .portfolio-feature-card--ggj .card-text a {
-  color: #8fe9d8;
+  color: #abf3ed;
 }
 
 .portfolio-feature-card--ballatro {
-  background: linear-gradient(180deg, #3b145a 0%, #1c102f 100%);
-  color: #fdf7ff;
+  background-color: #251032;
+  color: #efcbff;
 }
 
+.portfolio-feature-card--ballatro .card-body {
+  background-color: #251032;
+}
+
+.portfolio-feature-card--ballatro .card-title,
 .portfolio-feature-card--ballatro .card-title a,
+.portfolio-feature-card--ballatro .card-text,
 .portfolio-feature-card--ballatro .card-text a {
-  color: #e6b3ff;
+  color: #efcbff;
 }
 
-.card-title .btn-forum,
-.card-title .btn-doc {
-  margin-left: 0.5rem;
-  padding: 0.15rem 0.75rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  vertical-align: middle;
+.portfolio-coming-soon-card {
+  background-color: var(--site-surface);
 }
 
-.btn-forum {
-  background-color: #5f2f8a;
-  border: 2px solid #b58ce0;
-  color: #ffffff;
+.portfolio-coming-soon-card .card-img-top {
+  height: 10rem;
 }
 
-.btn-forum:hover,
-.btn-forum:focus {
-  background-color: #b58ce0;
-  border-color: #5f2f8a;
-  color: #ffffff;
-  text-decoration: none;
-  box-shadow: 0 0 0 0.2rem rgba(181, 140, 224, 0.5);
+.portfolio-wide-coming-soon-card {
+  background-color: #142f46;
+  border-color: #3f83b4;
+  grid-column: 1 / -1;
 }
 
-.btn-doc {
-  background-color: #275f93;
-  border: 2px solid #7fb8ef;
-  color: #ffffff;
+.portfolio-wide-coming-soon-card .card-body {
+  padding: 1.5rem;
 }
 
-.btn-doc:hover,
-.btn-doc:focus {
-  background-color: #7fb8ef;
-  border-color: #275f93;
-  color: #ffffff;
-  text-decoration: none;
-  box-shadow: 0 0 0 0.2rem rgba(127, 184, 239, 0.5);
+.portfolio-wide-coming-soon-card .card-title,
+.portfolio-wide-coming-soon-card .card-title a,
+.portfolio-wide-coming-soon-card .card-text {
+  color: #b9ddff;
 }
 
-.btn-nav {
-  background-color: #2d5f7f;
-  border: 2px solid #5a8fbd;
-  color: #ffffff;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  font-size: 0.95rem;
-}
-
-.btn-nav:hover,
-.btn-nav:focus {
-  background-color: #5a8fbd;
-  border-color: #2d5f7f;
-  color: #ffffff;
-  text-decoration: none;
-  box-shadow: 0 0 0 0.2rem rgba(90, 143, 189, 0.5);
-}
-
-.btn-year-one {
-  background-color: #2f6b35;
-  border: 2px solid #9ad0a2;
-  color: #ffffff;
-}
-
-.btn-year-one:hover,
-.btn-year-one:focus {
-  background-color: #9ad0a2;
-  border-color: #2f6b35;
-  color: #ffffff;
-  text-decoration: none;
-  box-shadow: 0 0 0 0.2rem rgba(154, 208, 162, 0.5);
-}
-
-.btn-year-two {
-  background-color: #1a3a52;
-  border: 2px solid #6dbbe0;
-  color: #ffffff;
-}
-
-.btn-year-two:hover,
-.btn-year-two:focus {
-  background-color: #6dbbe0;
-  border-color: #1a3a52;
-  color: #ffffff;
-  text-decoration: none;
-  box-shadow: 0 0 0 0.2rem rgba(109, 187, 224, 0.5);
-}
-
-.btn-year-three {
-  background-color: #7a1f2a;
-  border: 2px solid #e59aa4;
-  color: #ffffff;
-}
-
-.btn-year-three:hover,
-.btn-year-three:focus {
-  background-color: #e59aa4;
-  border-color: #7a1f2a;
-  color: #ffffff;
-  text-decoration: none;
-  box-shadow: 0 0 0 0.2rem rgba(229, 154, 165, 0.5);
-}
-
-.year-one-card,
-.year-two-card,
-.year-three-card {
-  color: #ffffff;
-}
-
-.year-one-card {
-  background-color: #234d28;
-  border: 2px solid #a9e0af;
-}
-
-.year-two-card {
-  background-color: #0f2840;
-  border: 2px solid #6dbbe0;
-}
-
-.year-three-card {
-  background-color: #6d1822;
-  border: 2px solid #f09aa5;
-}
-
-.year-one-card .card-title a,
-.year-one-card .card-text,
-.year-two-card .card-title a,
-.year-two-card .card-text,
-.year-three-card .card-title a,
-.year-three-card .card-text {
-  color: #ffffff;
-}
-
-@media (max-width: 767.98px) {
-  .latest-work-content {
-    text-align: center;
+@media (min-width: 1600px) {
+  .portfolio-project-grid--wide-rails {
+    align-items: start;
+    grid-template-columns: minmax(12rem, 0.55fr) minmax(30rem, 1.35fr) minmax(30rem, 1.35fr) minmax(12rem, 0.55fr);
   }
+
+  .portfolio-project-grid--wide-rails .portfolio-side-stack {
+    grid-row: 1;
+  }
+
+  .portfolio-project-grid--wide-rails .portfolio-side-stack--left {
+    grid-column: 1;
+  }
+
+  .portfolio-project-grid--wide-rails .portfolio-feature-card--ggj {
+    grid-column: 2;
+  }
+
+  .portfolio-project-grid--wide-rails .portfolio-feature-card--ballatro {
+    grid-column: 3;
+  }
+
+  .portfolio-project-grid--wide-rails .portfolio-feature-card {
+    align-self: stretch;
+  }
+
+  .portfolio-project-grid--wide-rails .portfolio-wide-coming-soon-card {
+    grid-column: 2 / 4;
+    grid-row: 2;
+  }
+
+  .portfolio-project-grid--wide-rails .portfolio-feature-card .card-img-top {
+    height: clamp(18rem, 13vw, 25rem);
+  }
+
+  .portfolio-project-grid--wide-rails .portfolio-side-stack--right {
+    grid-column: 4;
+  }
+
+  .portfolio-project-grid--wide-rails .portfolio-coming-soon-card .card-img-top {
+    height: clamp(10rem, 9vw, 16rem);
+  }
+
+  .portfolio-project-grid--wide-rails .portfolio-feature-card .card-text {
+    line-height: 1.6;
+  }
+}
+
+.contact-section {
+  background-color: var(--site-bg-deep);
+  padding: 3rem 0;
+}
+
+.contact-section .container {
+  max-width: 1140px;
+  width: min(calc(100% - clamp(4rem, 7vw, 9rem)), var(--site-wide-max));
+}
+
+.contact-section form {
+  margin-top: 1.75rem;
+}
+
+.contact-section .form-group {
+  margin-bottom: 1.25rem;
+}
+
+.contact-section label {
+  margin-bottom: 0.65rem;
+}
+
+@media (max-width: 991.98px) {
+  .page-shell,
+  .project-grid-section,
+  .play-projects-section,
+  .portfolio-section,
+  .reference-section,
+  .reference-heading,
+  .university-page .project-grid-section,
+  .portfolio-page .portfolio-section,
+  .work-page .project-grid-section {
+    width: min(calc(100% - 2rem), var(--site-content-max));
+  }
+
+  .portfolio-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-feature-card .card-img-top,
+  .university-page .card-img-top,
+  .play-page .card-img-top {
+    height: 14rem;
+  }
+
+  .latest-work-content {
+    text-align: left;
+  }
+
+  .contact-section .container {
+    width: min(calc(100% - 2rem), var(--site-content-max));
+  }
+}
+
+.site-footer {
+  background-color: var(--site-bg);
+  border-top: 1px solid var(--site-border);
+  color: var(--site-muted);
+  padding: 1rem 0;
+}
+
+.site-footer p {
+  margin-bottom: 0;
+}
+
+html[data-darkreader-mode] body,
+html[data-darkreader-mode] .jumbotron,
+html[data-darkreader-mode] .card,
+html[data-darkreader-mode] .modal-content,
+html[data-darkreader-mode] .donation-box,
+html[data-darkreader-mode] .site-footer,
+html[data-darkreader-mode] .about-card,
+html[data-darkreader-mode] .form-control {
+  color-scheme: dark !important;
+}
+
+html[data-darkreader-mode] body {
+  background-color: #151919 !important;
+  color: #d8d1c9 !important;
+}
+
+html[data-darkreader-mode] .jumbotron,
+html[data-darkreader-mode] .latest-work-section,
+html[data-darkreader-mode] .portfolio-coming-soon-card,
+html[data-darkreader-mode] .reference-band {
+  background-color: #232627 !important;
+}
+
+html[data-darkreader-mode] .navbar.bg-info {
+  background-color: var(--site-accent) !important;
+}
+
+html[data-darkreader-mode] .site-band--teal {
+  background-color: #175b65 !important;
+}
+
+html[data-darkreader-mode] .card,
+html[data-darkreader-mode] .modal-content,
+html[data-darkreader-mode] .donation-box,
+html[data-darkreader-mode] .about-card {
+  background-color: #182021 !important;
+  color: #d8d1c9 !important;
+}
+
+html[data-darkreader-mode] .form-control {
+  background-color: #101414 !important;
+  color: #d8d1c9 !important;
+}
+
+html[data-darkreader-mode] .portfolio-feature-card--ggj,
+html[data-darkreader-mode] .portfolio-feature-card--ggj .card-body {
+  background-color: #09282d !important;
+  color: #abf3ed !important;
+}
+
+html[data-darkreader-mode] .portfolio-feature-card--ballatro,
+html[data-darkreader-mode] .portfolio-feature-card--ballatro .card-body {
+  background-color: #251032 !important;
+  color: #efcbff !important;
+}
+
+html[data-darkreader-mode] .portfolio-wide-coming-soon-card,
+html[data-darkreader-mode] .portfolio-wide-coming-soon-card .card-body {
+  background-color: #142f46 !important;
+  color: #b9ddff !important;
 }

@@ -4,24 +4,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="darkreader-lock">
     <meta name="description" content="Jake Astles - Programmer Portfolio, coding and games development, various projects, and contact info.">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Jake Astles | University</title><!--Last word must be navbar link name for link to be highlighted-->
     <!-- Bootstrap -->
-    <link href="/css/bootstrap-4.4.1.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-5.0.2.min.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
   </head>
   <body class="university-page">
     <div id="navbar-placeholder"></div>
+	<script src="/js/site-interactions.js"></script>
 	<script src="/js/navbar-loader.js"></script>
-    <section>
+    <section class="hero-section">
       <div class="jumbotron text-center mt-5"><!--Larger offeset because the navbar is fixed and takes up more of the top of the page-->
         <div class="container">
           <div class="row">
             <div class="col-12">
               <h1>University of Staffordshire</h1>
-			  <p><b class="border-top border-bottom border-info" style="padding-right: 8px; padding-left: 8px;">Games Design and Programming</b></p>
-              <p>The following is a selection of the most interesting and meaningful projects I completed during my three years at university. Each one reflects a key stage in my academic development and creative growth, showing how my skills and ideas evolved over time. <a href="https://trello.com/w/jakeastlesuniversity" target="_blank">Here</a> are the Trello boards I used when on sprints for each project.</p>
+			  <p><b class="section-kicker">Games Design and Programming</b></p>
+              <p>The following is a selection of the most interesting and meaningful projects I completed during my three years at university. Each one reflects a key stage in my academic development and creative growth, showing how my skills and ideas evolved over time. The Trello boards I used when on sprints for each project are linked below.</p>
 				<div class="mt-3">
 					<h4 class="mb-2">Year Selection</h4>
 					<div class="d-flex justify-content-center flex-wrap">
@@ -35,6 +37,7 @@
 					<div class="d-flex justify-content-center flex-wrap">
 						<a class="btn btn-resource btn-forum m-1" href="#Forums" role="button">Forums</a>
 						<a class="btn btn-resource btn-doc m-1" href="#Documentation" role="button">Documentation</a>
+						<a class="btn btn-resource btn-trello m-1" href="https://trello.com/w/jakeastlesuniversity" target="_blank" rel="noopener" role="button">Trello</a>
 					</div>
 				</div>
             </div>
@@ -42,14 +45,14 @@
         </div>
       </div>
     </section>
-    <div class="text-center">
+    <div class="text-center pt-5">
 		<h1 id="Year-One">Year One</h1>
 	</div>
-    <section>
+    <section class="project-grid-section">
 		  <div class="row row-cols-1 row-cols-md-3 g-4">
 			  <div class="col">
 				<div class="card h-100 year-one-card">
-				  <a href="https://github.com/Lopsitey/Mushroom-Mayhem" target="_blank"><img src="/media/Mushroom-Mayhem.png" class="card-img-top" alt="Image of the Mushroom Mayhem game"></a>
+				  <a href="https://github.com/Lopsitey/Mushroom-Mayhem" target="_blank"><img src="/media/Mushroom-Mayhem.webp" class="card-img-top" alt="Image of the Mushroom Mayhem game"></a>
 				  <div class="card-body">
 					<h5 class="card-title"><a href="https://github.com/Lopsitey/Mushroom-Mayhem" target="_blank">Mushroom Mayhem</a><a href="/documents/Forums/Yr1/CS-For-Games.html" target="_blank" class="btn btn-forum">Forum</a></h5>
 					<p class="card-text">This is a horror game where you have to explore a map to collect food whilst avoiding the hungry mushrooms. With only a torch and a stun gun to aid you, can you survive?</p>
@@ -58,43 +61,43 @@
 			  </div>
 			  <div class="col">
 				<div class="card h-100 year-one-card">
-				  <a href="https://github.com/Lopsitey/Pizza-Apocalypse" target="_blank"><img src="/media/Pizza-Apocalypse.png" class="card-img-top" alt="Image of the Pizza Apocalypse game"></a>
+				  <a href="https://github.com/Lopsitey/Pizza-Apocalypse" target="_blank"><img src="/media/Pizza-Apocalypse.webp" class="card-img-top" alt="Image of the Pizza Apocalypse game"></a>
 				  <div class="card-body">
-					<h5 class="card-title"><a href="https://github.com/Lopsitey/Pizza-Apocalypse" target="_blank">Pizza Apocalypse</a><a href="/documents/Forums/Yr1/Game-Prototyping.html" target="_blank" class="btn btn-forum">Forum</a><a href="/documents/Documentation/Yr1/Game%20Prototyping%20Project%20Plan%202.docx" target="_blank" class="btn btn-doc">Documentation</a></h5>
+					<h5 class="card-title"><a href="https://github.com/Lopsitey/Pizza-Apocalypse" target="_blank">Pizza Apocalypse</a><a href="/documents/Forums/Yr1/Game-Prototyping.html" target="_blank" class="btn btn-forum">Forum</a><a href="/documents/Documentation/Yr1/Game%20Prototyping%20Project%20Plan%202.docx" target="_blank" class="btn btn-doc">Documentation</a><a href="https://trello.com/b/4OsACtF7/second-games-prototyping-project" target="_blank" rel="noopener" class="btn btn-trello">Trello</a></h5>
 					<p class="card-text">This is a post-apocalyptic pizza delivery simulator. You are one of the few remaining and as a delivery driver it is your responsibility to feed the starving survivors. With only pizza at your disposal, can you fend off the zombies for long enough to complete your deliveries?</p>
 				  </div>
 				</div>
 			  </div>
 			  <div class="col">
 				<div class="card h-100 year-one-card">
-				  <a href="https://github.com/Lopsitey/Tank-Escape" target="_blank"><img src="/media/Tank-Escape.png" class="card-img-top" alt="Image of the Tank Escape game"></a>
+				  <a href="https://github.com/Lopsitey/Tank-Escape" target="_blank"><img src="/media/Tank-Escape.webp" class="card-img-top" alt="Image of the Tank Escape game"></a>
 				  <div class="card-body">
 					<h5 class="card-title"><a href="https://github.com/Lopsitey/Tank-Escape" target="_blank">Tank Escape</a><a href="/documents/Forums/Yr1/Mechanic-Prototyping.html" target="_blank" class="btn btn-forum">Forum</a><a href="/documents/Documentation/Yr1/Mechanics%20Prototying%20Assessment%20Design%20Docs.pptx" target="_blank" class="btn btn-doc">Documentation</a></h5>
 					<p class="card-text">This is a third-person shooter/puzzle game. You wake up in a tank on an alien planet and find yourself attacked. Your only method to escape is to fight past these strange creatures and figure out how to open the doors.</p>
 				  </div>
 				</div>
 			  </div>
-			  <div class="col pt-4">
+			  <div class="col">
 				<div class="card h-100 year-one-card">
-				  <a href="https://github.com/Lopsitey/OpenGL-FreeGLUT-Project" target="_blank"><img src="/media/OpenGL-Project.png" class="card-img-top" alt="Image of the OpenGL Project showing the meshes and menu"></a>
+				  <a href="https://github.com/Lopsitey/OpenGL-FreeGLUT-Project" target="_blank"><img src="/media/OpenGL-Project.webp" class="card-img-top" alt="Image of the OpenGL Project showing the meshes and menu"></a>
 				  <div class="card-body">
 					<h5 class="card-title"><a href="https://github.com/Lopsitey/OpenGL-FreeGLUT-Project" target="_blank">OpenGL Graphics Programming</a><a href="/documents/Forums/Yr1/Graphics-Programming.html" target="_blank" class="btn btn-forum">Forum</a></h5>
 					<p class="card-text">This generates 3D graphics, which are loaded and textured with custom mesh and TGA loaders. They are then lit using the phong lighting model. The meshes include pyramids, cubes and one earth and terrain mesh. You can also control the camera, move the meshes, apply friction and type using a menu and the FreeFont library.</p>
 				  </div>
 				</div>
 			  </div>
-			  <div class="col pt-4">
+			  <div class="col">
 				<div class="card h-100 year-one-card">
-				  <a href="https://github.com/Lopsitey/Game-Prototyping-First-Project" target="_blank"><img src="/media/Jetpack-Parkour.png" class="card-img-top" alt="Image of the Jetpack Parkour demo, showing the zombie and character mid-air"></a>
+				  <a href="https://github.com/Lopsitey/Game-Prototyping-First-Project" target="_blank"><img src="/media/Jetpack-Parkour.webp" class="card-img-top" alt="Image of the Jetpack Parkour demo, showing the zombie and character mid-air"></a>
 				  <div class="card-body">
-					<h5 class="card-title"><a href="https://github.com/Lopsitey/Game-Prototyping-First-Project" target="_blank">Jetpack Parkour Demo</a><a href="/documents/Forums/Yr1/Game-Prototyping.html" target="_blank" class="btn btn-forum">Forum</a><a href="/documents/Documentation/Yr1/Game%20Prototyping%20Project%20Plan%201.docx" target="_blank" class="btn btn-doc">Documentation</a></h5>
+					<h5 class="card-title"><a href="https://github.com/Lopsitey/Game-Prototyping-First-Project" target="_blank">Jetpack Parkour Demo</a><a href="/documents/Forums/Yr1/Game-Prototyping.html" target="_blank" class="btn btn-forum">Forum</a><a href="/documents/Documentation/Yr1/Game%20Prototyping%20Project%20Plan%201.docx" target="_blank" class="btn btn-doc">Documentation</a><a href="https://trello.com/b/jvkhgoZ8/first-games-prototyping-project" target="_blank" rel="noopener" class="btn btn-trello">Trello</a></h5>
 					<p class="card-text">This was the first project I created using Unity 6's new input system. You have to do parkour with a jetpack whilst keeping it fuelled. I also added a zombie to punish you for falling back to the bottom.</p>
 				  </div>
 				</div>
 			  </div>
-			  <div class="col pt-4">
+			  <div class="col">
 				<div class="card h-100 year-one-card">
-				  <a href="https://github.com/Lopsitey/Module-1" target="_blank"><img src="/media/Module-1-Project.png" class="card-img-top" alt="Image of the text-based adventure game running with some code in the background"></a>
+				  <a href="https://github.com/Lopsitey/Module-1" target="_blank"><img src="/media/Module-1-Project.webp" class="card-img-top" alt="Image of the text-based adventure game running with some code in the background"></a>
 				  <div class="card-body">
 					<h5 class="card-title"><a href="https://github.com/Lopsitey/Module-1" target="_blank">Module 1 Work</a></h5>
 					<p class="card-text">This is a big repository of all the initial work I did in my first module. It contains a lot of C++ practice projects and challenges. My assessment for the module was a short text-based adventure game which was a bit of a culmination of all my C++ knowledge at the time. It runs in the console and has multiple story paths.</p>
@@ -106,19 +109,19 @@
     <div class="text-center mt-4">
 		<h1 id="Year-Two">Year Two</h1>
 	</div>
-    <section id="year-two-section">
+    <section id="year-two-section" class="project-grid-section">
 		  <div class="row row-cols-1 row-cols-md-3 g-4">
 			  <div class="col">
 				<div class="card h-100 year-two-card">
 				  <a href="https://github.com/Lopsitey/AMD-Tank-Controller-ECS" target="_blank">
-					<video autoplay loop muted playsinline poster="/media/Tank ECS Fallback.png" class="card-img-top" aria-label="Animated preview of the AMD-Tank-Controller-ECS project">
+					<video autoplay loop muted playsinline poster="/media/Tank ECS Fallback.webp" class="card-img-top" aria-label="Animated preview of the AMD-Tank-Controller-ECS project">
 					  <source src="/media/Tank ECS.webm" type="video/webm">
 					  <source src="/media/Tank ECS.mp4" type="video/mp4">
 					  Your browser does not support the video tag.
 					</video>
 				  </a>
 				  <div class="card-body">
-					<h5 class="card-title"><a href="https://github.com/Lopsitey/AMD-Tank-Controller-ECS" target="_blank">Tank Controller & ECS Wave Spawner</a><a href="/documents/Documentation/Yr2/AMD%20System%20Overview.docx" target="_blank" class="btn btn-doc">Documentation</a></h5>
+					<h5 class="card-title"><a href="https://github.com/Lopsitey/AMD-Tank-Controller-ECS" target="_blank">Tank Controller & ECS Wave Spawner</a><a href="/documents/Documentation/Yr2/AMD%20System%20Overview.docx" target="_blank" class="btn btn-doc">Documentation</a><a href="https://trello.com/b/onikHK3T/amd-tank-controller-ecs" target="_blank" rel="noopener" class="btn btn-trello">Trello</a></h5>
 					<p class="card-text">This is my advanced mechanics design project where you control a hyperrealistic tank. The tank has traction, suspension, throttle, differential steering, auto brake, auto camera snap, toggleable camera modes, 3 bullet types with realistic vfx, advanced UI and more. The ECS system uses a scripted importer to parse waves into the enemy spawner.</p>
 				  </div>
 				</div>
@@ -126,7 +129,7 @@
 			  <div class="col">
 				<div class="card h-100 year-two-card">
 				  <a href="https://github.com/Lopsitey/AI-Pathfinding-and-Decision-Making" target="_blank">
-					<video autoplay loop muted playsinline poster="/media/AI Pathfinding and Decision-Making Fallback.png" class="card-img-top game-ai-media" aria-label="Animated preview of the AI Pathfinding and Decision-Making project">
+					<video autoplay loop muted playsinline poster="/media/AI Pathfinding and Decision-Making Fallback.webp" class="card-img-top game-ai-media" aria-label="Animated preview of the AI Pathfinding and Decision-Making project">
 					  <source src="/media/AI Pathfinding and Decision-Making.webm" type="video/webm">
 					  <source src="/media/AI Pathfinding and Decision-Making.mp4" type="video/mp4">
 					  Your browser does not support the video tag.
@@ -140,17 +143,17 @@
 			  </div>
 			  <div class="col">
 				<div class="card h-100 year-two-card">
-				  <a href="https://github.com/Lopsitey/Staffs-Uni-Stoke-G1-Collab" target="_blank"><img src="/media/Group Collaboration1.png" class="card-img-top" alt="Image of the isometric puzzle game made in the group collaboration."></a>
+				  <a href="https://github.com/Lopsitey/Staffs-Uni-Stoke-G1-Collab" target="_blank"><img src="/media/Group Collaboration1.webp" class="card-img-top" alt="Image of the isometric puzzle game made in the group collaboration."></a>
 				  <div class="card-body">
 					<h5 class="card-title"><a href="https://github.com/Lopsitey/Staffs-Uni-Stoke-G1-Collab" target="_blank">Group Collaboration</a><a href="/documents/Forums/Yr2/Junior-Collab.html" target="_blank" class="btn btn-forum">Forum</a><a href="/documents/Documentation/Yr2/Technical%20Design%20Document.pdf" target="_blank" class="btn btn-doc">Documentation</a></h5>
 					<p class="card-text">I was in a team of 30 people with animators, artists, designers and programmers. I was the tech lead, this involved managing the GitHub repo and the programming team. This was also my first time writing an entire set of technical design documentation. This outlined the general code architechture for the project, folder structure, system breakdowns, GitHub practices and more.</p>
 				  </div>
 				</div>
 			  </div>
-			  <div class="col pt-4">
+			  <div class="col">
 				<div class="card h-100 year-two-card">
 				  <a href="https://github.com/Lopsitey/Audio-Development" target="_blank">
-					<video autoplay loop muted playsinline poster="/media/Audio Development Fallback.png" class="card-img-top" aria-label="Animated preview of the Audio Development project">
+					<video autoplay loop muted playsinline poster="/media/Audio Development Fallback.webp" class="card-img-top" aria-label="Animated preview of the Audio Development project">
 					  <source src="/media/Audio Development.webm" type="video/webm">
 					  <source src="/media/Audio Development.mp4" type="video/mp4">
 					  Your browser does not support the video tag.
@@ -162,10 +165,10 @@
 				  </div>
 				</div>
 			  </div>
-			  <div class="col pt-4">
+			  <div class="col">
 				<div class="card h-100 year-two-card">
 				  <a href="https://github.com/Lopsitey/First_Mechanics_Intro_Proj" target="_blank">
-					<video autoplay loop muted playsinline poster="/media/Intro To Mechanics Fallback.png" class="card-img-top" aria-label="Animated preview of the Introduction To Mechanics project">
+					<video autoplay loop muted playsinline poster="/media/Intro To Mechanics Fallback.webp" class="card-img-top" aria-label="Animated preview of the Introduction To Mechanics project">
 					  <source src="/media/Intro To Mechanics.webm" type="video/webm">
 					  Your browser does not support the video tag.
 					</video>
@@ -176,9 +179,9 @@
 				  </div>
 				</div>
 			  </div>
-			  <div class="col pt-4">
+			  <div class="col">
 				<div class="card h-100 year-two-card">
-				  <a href="https://github.com/Lopsitey/CPlusPlusGameJam25" target="_blank"><img src="/media/Unreal Engine C++.png" class="card-img-top" alt="Placeholder image for the CPlusPlusGameJam25 project"></a>
+				  <a href="https://github.com/Lopsitey/CPlusPlusGameJam25" target="_blank"><img src="/media/Unreal Engine C++.webp" class="card-img-top" alt="Placeholder image for the CPlusPlusGameJam25 project"></a>
 				  <div class="card-body">
 					<h5 class="card-title"><a href="https://github.com/Lopsitey/CPlusPlusGameJam25" target="_blank">Unreal Engine C++</a><a href="/documents/Forums/Yr2/CPP-For-Engines.html" target="_blank" class="btn btn-forum">Forum</a></h5>
 					<p class="card-text">This was my first time using C++ in the context of UE5. It was very difficult, but I ended up managing to create a very basic game which involved collecting items to win. The crux of this project is more about the implementation of the systems and using the correct practices/interfaces etc, as opposed to the project itself.</p>
@@ -190,7 +193,7 @@
 	<div class="text-center mt-4">
 		<h1 id="Year-Three">Year Three</h1>
 	</div>
-    <section>
+    <section class="project-grid-section">
 		  <div class="row row-cols-1 row-cols-md-3 g-4">
 			  <div class="col">
 				<div class="card h-100 year-three-card">
@@ -219,7 +222,7 @@
 				  </div>
 				</div>
 			  </div>
-			  <div class="col pt-4">
+			  <div class="col">
 				<div class="card h-100 year-three-card">
 				  <img src="/media/bkg_06.jpg" class="card-img-top" alt="Placeholder image for Year Three project four">
 				  <div class="card-body">
@@ -228,7 +231,7 @@
 				  </div>
 				</div>
 			  </div>
-			  <div class="col pt-4">
+			  <div class="col">
 				<div class="card h-100 year-three-card">
 				  <img src="/media/bkg_06.jpg" class="card-img-top" alt="Placeholder image for Year Three project five">
 				  <div class="card-body">
@@ -237,7 +240,7 @@
 				  </div>
 				</div>
 			  </div>
-			  <div class="col pt-4">
+			  <div class="col">
 				<div class="card h-100 year-three-card">
 				  <img src="/media/bkg_06.jpg" class="card-img-top" alt="Placeholder image for Year Three project six">
 				  <div class="card-body">
@@ -248,73 +251,62 @@
 			  </div>
 			</div>
     </section>
-	<div class="text-center mt-4">
-		<h1 id="Forums">Forums</h1>
-	</div>
-	<section>
-		<div class="container">
-			<h3>Year 1</h3>
-			<ul>
-				<li><a href="/documents/Forums/Yr1/CS-For-Games.html" target="_blank">CS for Games</a></li>
-				<li><a href="/documents/Forums/Yr1/Game-Prototyping.html" target="_blank">Game Prototyping</a></li>
-				<li><a href="/documents/Forums/Yr1/Graphics-Programming.html" target="_blank">Graphics Programming</a></li>
-				<li><a href="/documents/Forums/Yr1/Mechanic-Prototyping.html" target="_blank">Mechanic Prototyping</a></li>
-			</ul>
-			<h3>Year 2</h3>
-			<ul>
-				<li><a href="/documents/Forums/Yr2/Audio-Development.html" target="_blank">Audio Development</a></li>
-				<li><a href="/documents/Forums/Yr2/CPP-For-Engines.html" target="_blank">C++ for Engines</a></li>
-				<li><a href="/documents/Forums/Yr2/Game-AI.html" target="_blank">Game AI</a></li>
-				<li><a href="/documents/Forums/Yr2/Intro-To-Mechanics-1.html" target="_blank">Intro to Mechanics - Part 1</a></li>
-				<li><a href="/documents/Forums/Yr2/Intro-To-Mechanics-2.html" target="_blank">Intro to Mechanics - Part 2</a></li>
-				<li><a href="/documents/Forums/Yr2/Junior-Collab.html" target="_blank">Junior Collaboration</a></li>
-			</ul>
+	<section class="reference-band mt-4">
+		<div class="reference-library">
+		<div class="reference-column">
+			<h1 id="Forums" class="pb-3">Forums</h1>
+			<div class="reference-year">
+				<h3>Year 1</h3>
+				<ul>
+					<li><a href="/documents/Forums/Yr1/CS-For-Games.html" target="_blank">CS for Games</a></li>
+					<li><a href="/documents/Forums/Yr1/Game-Prototyping.html" target="_blank">Game Prototyping</a></li>
+					<li><a href="/documents/Forums/Yr1/Graphics-Programming.html" target="_blank">Graphics Programming</a></li>
+					<li><a href="/documents/Forums/Yr1/Mechanic-Prototyping.html" target="_blank">Mechanic Prototyping</a></li>
+				</ul>
+			</div>
+			<div class="reference-year">
+				<h3>Year 2</h3>
+				<ul>
+					<li><a href="/documents/Forums/Yr2/Audio-Development.html" target="_blank">Audio Development</a></li>
+					<li><a href="/documents/Forums/Yr2/CPP-For-Engines.html" target="_blank">C++ for Engines</a></li>
+					<li><a href="/documents/Forums/Yr2/Game-AI.html" target="_blank">Game AI</a></li>
+					<li><a href="/documents/Forums/Yr2/Intro-To-Mechanics-1.html" target="_blank">Intro to Mechanics - Part 1</a></li>
+					<li><a href="/documents/Forums/Yr2/Intro-To-Mechanics-2.html" target="_blank">Intro to Mechanics - Part 2</a></li>
+					<li><a href="/documents/Forums/Yr2/Junior-Collab.html" target="_blank">Junior Collaboration</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="reference-column">
+			<h1 id="Documentation" class="pb-3">Documentation</h1>
+			<div class="reference-year">
+				<h3>Year 1</h3>
+				<ul>
+					<li><a href="/documents/Documentation/Yr1/Game%20Prototyping%20Project%20Plan%201.docx" target="_blank">Game Prototyping Project Plan 1 - DOCX</a></li>
+					<li><a href="/documents/Documentation/Yr1/Game%20Prototyping%20Project%20Plan%202.docx" target="_blank">Game Prototyping Project Plan 2 - DOCX</a></li>
+					<li><a href="/documents/Documentation/Yr1/Mechanics%20Prototyping%20Assessment%20Design%20Docs.pptx" target="_blank">Mechanics Prototyping Assessment Design Docs - PPTX</a></li>
+					<li><a href="/documents/Documentation/Yr1/Notes%20-%20NP%20Hard%20Problems%20Lecture.txt" target="_blank">Notes - NP Hard Problems Lecture - TXT</a></li>
+					<li><a href="/documents/Documentation/Yr1/Notes%20-%20Computational%20Methods%20Seminar.docx" target="_blank">Notes - Computational Methods Seminar - DOCX</a></li>
+				</ul>
+			</div>
+			<div class="reference-year">
+				<h3>Year 2</h3>
+				<ul>
+					<li><a href="/documents/Documentation/Yr2/AMD%20System%20Overview.docx" target="_blank">AMD System Overview - DOCX</a></li>
+					<li><a href="/documents/Documentation/Yr2/A%20Research%20Review%20of%20Artificial%20Intelligence%20in%20Dying%20Light.docx" target="_blank">Dying Light Research Essay - DOCX</a></li>
+					<li><a href="/documents/Documentation/Yr2/Audio%20Development%20Design%20Documentation.docx" target="_blank">Audio Development Design Documentation - DOCX</a></li>
+					<li><a href="/documents/Documentation/Yr2/CPP%20UML%20Diagram.vsdx" target="_blank">C++ UML Diagram - VSDX</a></li>
+					<li><a href="/documents/Documentation/Yr2/IMD%20Design%20Documentation.docx" target="_blank">IMD Design Documentation - DOCX</a></li>
+					<li><a href="/documents/Documentation/Yr2/Technical%20Design%20Document.pdf" target="_blank">Technical Design Document - PDF</a></li>
+				</ul>
+			</div>
+		</div>
 		</div>
 	</section>
-	<div class="text-center mt-4">
-		<h1 id="Documentation">Documentation</h1>
-	</div>
-	<section>
-		<div class="container">
-			<h3>Year 1</h3>
-			<ul>
-				<li><a href="/documents/Documentation/Yr1/Game%20Prototyping%20Project%20Plan%201.docx" target="_blank">Game Prototyping Project Plan 1 - DOCX</a></li>
-				<li><a href="/documents/Documentation/Yr1/Game%20Prototyping%20Project%20Plan%202.docx" target="_blank">Game Prototyping Project Plan 2 - DOCX</a></li>
-				<li><a href="/documents/Documentation/Yr1/Mechanics%20Prototyping%20Assessment%20Design%20Docs.pptx" target="_blank">Mechanics Prototyping Assessment Design Docs - PPTX</a></li>
-				<li><a href="/documents/Documentation/Yr1/Notes%20-%20NP%20Hard%20Problems%20Lecture.txt" target="_blank">Notes - NP Hard Problems Lecture - TXT</a></li>
-				<li><a href="/documents/Documentation/Yr1/Notes%20-%20Computational%20Methods%20Seminar.docx" target="_blank">Notes - Computational Methods Seminar - DOCX</a></li>
-			</ul>
-			<h3>Year 2</h3>
-			<ul>
-				<li><a href="/documents/Documentation/Yr2/AMD%20System%20Overview.docx" target="_blank">AMD System Overview - DOCX</a></li>
-				<li><a href="/documents/Documentation/Yr2/A%20Research%20Review%20of%20Artificial%20Intelligence%20in%20Dying%20Light.docx" target="_blank">Dying Light Research Essay - DOCX</a></li>
-				<li><a href="/documents/Documentation/Yr2/Audio%20Development%20Design%20Documentation.docx" target="_blank">Audio Development Design Documentation - DOCX</a></li>
-				<li><a href="/documents/Documentation/Yr2/CPP%20UML%20Diagram.vsdx" target="_blank">C++ UML Diagram - VSDX</a></li>
-				<li><a href="/documents/Documentation/Yr2/IMD%20Design%20Documentation.docx" target="_blank">IMD Design Documentation - DOCX</a></li>
-				<li><a href="/documents/Documentation/Yr2/Technical%20Design%20Document.pdf" target="_blank">Technical Design Document - PDF</a></li>
-			</ul>
-		</div>
-	</section>
-    <hr>
     <div id="contact-placeholder"></div>
-    <hr>
-    <footer class="text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p>Copyright © <span id="year"></span>
-				<script>year.textContent = new Date().getFullYear();</script> Jake Astles | <a href="https://www.streamlinehq.com/icons" target="_blank">Free Icons From Streamline</a> | <a href ="https://iconduck.com/sets/social-media-icon-set" target="_blank">Icons From Social Media Icon Set At Iconduck</a></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/js/jquery-3.4.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/js/popper.min.js"></script>
-    <script src="/js/bootstrap-4.4.1.js"></script>
+    <div id="footer-placeholder"></div>
     <script src="/js/contact-form.js"></script>
     <script src="/js/donation-box-loader.js"></script>
     <script src="/js/contact-loader.js"></script>
+    <script src="/js/footer-loader.js"></script>
   </body>
 </html>
