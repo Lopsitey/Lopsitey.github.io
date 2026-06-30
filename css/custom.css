@@ -342,6 +342,22 @@ hr {
   width: min(calc(100% - (var(--site-page-gutter) * 2)), calc(var(--site-university-wide-max) * 1.1));
 }
 
+.university-year-band {
+  padding-bottom: 0.75rem;
+}
+
+.university-year-band-one {
+  background-color: #112719;
+}
+
+.university-year-band-two {
+  background-color: #0d2234;
+}
+
+.university-year-band-three {
+  background-color: #2c1117;
+}
+
 .university-page .card-img-top,
 .play-page .card-img-top {
   height: clamp(13rem, 16vw, 19rem);
@@ -530,11 +546,13 @@ hr {
 .portfolio-side-stack {
   display: grid;
   gap: 1.5rem;
+  max-height:35rem;
 }
 
 .portfolio-feature-card,
 .portfolio-coming-soon-card {
   min-height: 0;
+  max-height: 40rem;
 }
 
 .portfolio-feature-card {
@@ -600,10 +618,15 @@ hr {
   background-color: #142f46;
   border-color: #3f83b4;
   grid-column: 1 / -1;
+  filter: drop-shadow(0 0 0.2rem rgba(187, 141, 235, 0.28));
+  min-height:5rem;
+  height:8vw;
 }
 
 .portfolio-wide-coming-soon-card .card-body {
-  padding: 1.5rem;
+  padding-inline: 1.5rem;
+  padding-block: 3vw;
+  text-align: center;
 }
 
 .portfolio-wide-coming-soon-card .card-title,
@@ -746,6 +769,18 @@ html[data-darkreader-mode] .latest-work-section,
 html[data-darkreader-mode] .portfolio-coming-soon-card,
 html[data-darkreader-mode] .reference-band {
   background-color: #232627 !important;
+}
+
+html[data-darkreader-mode] .university-year-band-one {
+  background-color: #112719 !important;
+}
+
+html[data-darkreader-mode] .university-year-band-two {
+  background-color: #0d2234 !important;
+}
+
+html[data-darkreader-mode] .university-year-band-three {
+  background-color: #2c1117 !important;
 }
 
 html[data-darkreader-mode] .navbar.bg-info {

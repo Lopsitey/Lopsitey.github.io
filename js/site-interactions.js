@@ -15,6 +15,9 @@
       .navbar.bg-info { background-color: #128293 !important; }
       .site-band--teal { background-color: #175b65 !important; }
       .jumbotron, .latest-work-section, .portfolio-coming-soon-card, .reference-band { background-color: #232627 !important; }
+      .university-year-band-one { background-color: #112719 !important; }
+      .university-year-band-two { background-color: #0d2234 !important; }
+      .university-year-band-three { background-color: #2c1117 !important; }
       .card, .modal-content, .donation-box, .about-card { background-color: #182021 !important; color: #d8d1c9 !important; }
       .portfolio-feature-card--ggj, .portfolio-feature-card--ggj .card-body { background-color: #09282d !important; color: #abf3ed !important; }
       .portfolio-feature-card--ballatro, .portfolio-feature-card--ballatro .card-body { background-color: #251032 !important; color: #efcbff !important; }
