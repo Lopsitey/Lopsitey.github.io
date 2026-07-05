@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /home/thanks/
+
+Sitemap: https://jake-astles.work/sitemap.xml
